@@ -48,7 +48,7 @@ var numSeven =7 ;
 var numEight = 8;
 var numNine = 9;
 var numTen = 10;
-document.write("<h1>TABLE OF 5 ")
+document.write("<h1>TABLE OF 5</h1> ")
 document.write( "<br>" +numFive + multiplySign + numOne  + equalSign + (numFive*numOne) );
 document.write( "<br>" +numFive + multiplySign + numTwo  + equalSign + (numFive*numTwo) );
 document.write( "<br>" +numFive + multiplySign + numThree  + equalSign + (numFive*numThree) );
@@ -59,3 +59,30 @@ document.write( "<br>" +numFive + multiplySign + numSeven  + equalSign + (numFiv
 document.write( "<br>" +numFive + multiplySign + numEight  + equalSign + (numFive*numEight) );
 document.write( "<br>" +numFive + multiplySign + numNine  + equalSign + (numFive*numNine) );
 document.write( "<br>" +numFive + multiplySign + numTen  + equalSign + (numFive*numTen) );
+// currency exchange
+var uSD1 = 104;
+var sA1 = 28;
+var quantityOfUSD = 10;
+var quantityOfSA = 25;
+document.write("<br>Total currency in PKR:" + (uSD1*quantityOfUSD)+(sA1*quantityOfSA)) ;
+// task.10
+var arithmaticNumber = 3;
+var add5 = 5;
+var multiplyBy10 = 10;
+var divideBy2 = 2;
+var add = arithmaticNumber+add5;
+var multiple = arithmaticNumber*multiplyBy10;
+var resultOfAdditionMultiplication = add+multiple;
+var divide = resultOfAdditionMultiplication/divideBy2;
+// var divide = arithmaticNumber/divideBy2;
+// console.log(add+multiple+divide);
+console.log(divide)
+// Age Calculator
+var currentYear = 2024;
+var birthYear = 2000;
+var result = currentYear-birthYear;
+document.write("<br><h1>Age calculator</h1>")
+document.write("<br>Current Year" + currentYear);
+document.write("<br>Birth Year" + birthYear);
+document.write("<br>Your Age is:  " +result);
+
