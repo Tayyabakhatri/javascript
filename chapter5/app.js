@@ -32,39 +32,34 @@ mathematicalExpression = mathematicalExpression%3;
 document.write("<br>The reminder is: " + mathematicalExpression);
 // movie ticket
 var movieTicketPrice = 600;
-var movie5 = (movieTicketPrice * 5);
+var movie5 = movieTicketPrice * 5;
 document.write("<br>Total cost of buy 5 tickets to a movie is " + movie5 + "PKR");
 // table of 5
-var numFive = 5;
-var multiplySign = "*"
-var equalSign = "="
-var numOne = 1;
-var numTwo = 2;
-var numThree =3 ;
-var numFour = 4;
-var numFive = 5;
-var numSix = 6;
-var numSeven =7 ;
-var numEight = 8;
-var numNine = 9;
-var numTen = 10;
-document.write("<h1>TABLE OF 5</h1> ")
-document.write( "<br>" +numFive + multiplySign + numOne  + equalSign + (numFive*numOne) );
-document.write( "<br>" +numFive + multiplySign + numTwo  + equalSign + (numFive*numTwo) );
-document.write( "<br>" +numFive + multiplySign + numThree  + equalSign + (numFive*numThree) );
-document.write( "<br>" +numFive + multiplySign + numFour  + equalSign + (numFive*numFour) );
-document.write( "<br>" +numFive + multiplySign + numFive  + equalSign + (numFive*numFive) );
-document.write( "<br>" +numFive + multiplySign + numSix  + equalSign + (numFive*numSix) );
-document.write( "<br>" +numFive + multiplySign + numSeven  + equalSign + (numFive*numSeven) );
-document.write( "<br>" +numFive + multiplySign + numEight  + equalSign + (numFive*numEight) );
-document.write( "<br>" +numFive + multiplySign + numNine  + equalSign + (numFive*numNine) );
-document.write( "<br>" +numFive + multiplySign + numTen  + equalSign + (numFive*numTen) );
+var tableNum = 9;
+var initialNum = 1 ;
+var operatorSign = "X";
+var equalSign = "=";
+
+document.write(
+"<br> <h1>Table of any number</h1>" +tableNum + operatorSign + initialNum++ + equalSign +tableNum*1 +   
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*2+
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*3+
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*4+
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*5+
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*6+
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*7+
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*8+
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*9+
+"<br>" +tableNum + operatorSign + initialNum++ + equalSign + tableNum*10);
+
 // currency exchange
 var uSD1 = 104;
 var sA1 = 28;
 var quantityOfUSD = 10;
 var quantityOfSA = 25;
-document.write("<br>Total currency in PKR:" + (uSD1*quantityOfUSD)+(sA1*quantityOfSA)) ;
+var uSDinToPKr = uSD1*quantityOfUSD
+var sAinToPKR = sA1*quantityOfSA
+document.write("<br> <h1>Exchange Rate</h1>" +"Total currency in PKR:", + uSDinToPKr+sAinToPKR) ;
 // task.10
 var arithmaticNumber = 3;
 var add5 = 5;
@@ -85,4 +80,47 @@ document.write("<br><h1>Age calculator</h1>")
 document.write("<br>Current Year" + currentYear);
 document.write("<br>Birth Year" + birthYear);
 document.write("<br>Your Age is:  " +result);
+// shopping cart
+var item1Price = 650;
+var qtyOfItem1 = 3;
+var totalPriceOfItem1 = item1Price*qtyOfItem1;
+
+var item2Price = 100;
+var qtyOfItem2 = 7;
+var totalPriceOfItem2 = item2Price*qtyOfItem2;
+var shippingCharges = 100;
+var totalPrice = totalPriceOfItem1+ totalPriceOfItem2 + shippingCharges;
+// console.log (totalPriceOfItem2);
+document.write("<br>Total cost of your order is:", + totalPrice);
+// marksheet
+var totalMarks = 980;
+var marksObtained = 804;
+var percentage = marksObtained/totalMarks*100;
+document.write ("<h1>Marksheet</h1>" , "Total marks:" +totalMarks , "<br>obtained marks:" + marksObtained,  "<br>percentage ", + percentage);
+// life time supply calculator
+var favSnack = "junoon";
+var currentAge = 20 ;
+var estimatedAge =80;
+var restAge = estimatedAge-currentAge;
+var snackPerDay = 5;
+var oneYear = 365*5;
+var restYear = oneYear*estimatedAge;
+document.write("<h1> Lifetime supply calculator</h1>" ,"Favourite snack: "+favSnack + "<br>Current Age: "+ currentAge + "<br>estimated Maximum Age: "+restAge+ "<br> Amount Of snacks per day: " + snackPerDay +"<br>You will need "+ restYear + " to last you until the ripe old age of "+ estimatedAge);
+// conversion formula
+var celsiusTemprature = 25;
+var farenhietTemprature = 70;
+var celConversion = celsiusTemprature*9/5+32
+var farConversion = (farenhietTemprature-32)*5/9
+document.write("<br>"+"<h1>Conversion fomulas</h1>"+celsiusTemprature+"oC is "+celConversion+"o"+"F", "<br>"+farenhietTemprature+"oF is "+farConversion +"o"+"C");
+// Geometrizer
+var radiusOfaCircle = 20;
+var pie = 3.142;
+var circumferences = 2*pie*radiusOfaCircle;
+var area = pie*radiusOfaCircle^(2);
+document.write("<br><h1>Geometry</h1>Radius Of a circle is "+radiusOfaCircle,"<br>Circumferences Of a circle is "+circumferences,"<br>The area is "+ area);
+
+
+
+
+
 
