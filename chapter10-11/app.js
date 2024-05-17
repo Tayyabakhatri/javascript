@@ -171,6 +171,29 @@ if (hour === 0 && prepand === ' AM ') {
 
 // Display the current time
 console.log("Current Time: " + hour + prepand + " : " + minute + " : " + second); 
+// table 
+var tableNum = 50;
+var equalSign = "=";
+var mulSign = "X";
+var iniNum = 1;
+var result = 12* iniNum;
+document.write(tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>" ,tableNum+mulSign+ iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+document.write("<br>", tableNum+mulSign+iniNum+equalSign+tableNum*iniNum++)
+
+
+
 
 
 
