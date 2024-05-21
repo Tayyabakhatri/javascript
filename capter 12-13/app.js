@@ -1,4 +1,41 @@
+// task1
+// var alphabet = prompt("enter alphabet");
+// if (alphabet.charCodeAt >=65 && alphabet.charCodeAt <=90){
+//     alert("Its an Uppercase letter");
+// }
+// else if (alphabet<=97 && alphabet>=122){
+//     alert("its a smallcase letter");
+// }
+// else if (alphabet>=48 && alphabet<=57){
+//     alert("its a number")
+// }
+// else if ((alphabet>=32 && alphabet<=47)|| (alphabet<=58 && alphabet>=64)||(alphabet<=91&& alphabet>=96)||(alphabet<=123&& alphabet>=126)){
+//     alert("its a puctuation mark")
+// }
 
+var alphabet = prompt("Enter a single character:");
+
+if (alphabet.length !== 1) {
+    alert("Invalid input! Please enter a single character.");
+}
+ else {
+    var asciiCode = alphabet.charCodeAt(0);
+
+    if (asciiCode >= 65 && asciiCode <= 90) {
+        alert("It's an uppercase letter.");
+    } else if (asciiCode >= 97 && asciiCode <= 122) {
+        alert("It's a lowercase letter.");
+    } else if (asciiCode >= 48 && asciiCode <= 57) {
+        alert("It's a number.");
+    } else if ((asciiCode >= 32 && asciiCode <= 47) || 
+               (asciiCode >= 58 && asciiCode <= 64) || 
+               (asciiCode >= 91 && asciiCode <= 96) || 
+               (asciiCode >= 123 && asciiCode <= 126)) {
+        alert("It's a punctuation mark.");
+    } else {
+        alert("The character does not fall into any of the specified categories.");
+    }
+}
 
 
 
@@ -47,6 +84,13 @@
 // else{
 //     alert("false");
 // }
+// var userAlphabet = prompt("Enter any alphabet");
+// if (userAlphabet===a||userAlphabet===e||userAlphabet===i||userAlphabet===o||userAlphabet===u){
+//     alert("its a vawel");
+// }
+// else{
+//     alert("its a consonent");
+// }
 // var userInput = +prompt("enter anything ,I will tell you what you have entered");
 // let number =[1,2, 3 ,4 ,5 ,6, 7, 8 ,9, 10]
 // let speCharactors = ["!","@","#","$","%","^","&","*","(",")","?"]
@@ -92,25 +136,25 @@ console.log("apple">"banana");
 
 
 // task7
-const time = prompt("Enter time : (e.g:19:00)");
+// const time = prompt("Enter time : (e.g:19:00)");
 // prompt se pehly + nahi lgana q k input type string hogi ,phir nechy hours and minutes men jo value store krai he us se pehle :parseInt ka yehi akm he k wo string ko number men convert kry
 // more to this split is a method not a keyword .its is a method use to split a string into array eg "hello, world!"
 // split will seperate the ["hello" "world"] and make it array using , as the seperator
 
-const hours = parseInt(time.split(":")[0]);
-const minutes = parseInt(time.split(":")[1]);
-if(hours>=6 && hours<12){
-    alert("Good Morning");
-}
-else if(hours>=12 && hours<18){
-    alert("Good Afternoon");
-}
-else if (hours>=18 && hours<24){
-    alert("Good evening ");
-}
-else if (hours>=21 && hours<24){
-    alert("Good Night");
-}
+// const hours = parseInt(time.split(":")[0]);
+// const minutes = parseInt(time.split(":")[1]);
+// if(hours>=6 && hours<12){
+//     alert("Good Morning");
+// }
+// else if(hours>=12 && hours<18){
+//     alert("Good Afternoon");
+// }
+// else if (hours>=18 && hours<24){
+//     alert("Good evening ");
+// }
+// else if (hours>=21 && hours<24){
+//     alert("Good Night");
+// }
 
 
 
