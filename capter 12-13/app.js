@@ -13,29 +13,29 @@
 //     alert("its a puctuation mark")
 // }
 
-var alphabet = prompt("Enter a single character:");
+// var alphabet = prompt("Enter a single character:");
 
-if (alphabet.length !== 1) {
-    alert("Invalid input! Please enter a single character.");
-}
- else {
-    var asciiCode = alphabet.charCodeAt(0);
+// if (alphabet.length !== 1) {
+//     alert("Invalid input! Please enter a single character.");
+// }
+//  else {
+//     var asciiCode = alphabet.charCodeAt(0);
 
-    if (asciiCode >= 65 && asciiCode <= 90) {
-        alert("It's an uppercase letter.");
-    } else if (asciiCode >= 97 && asciiCode <= 122) {
-        alert("It's a lowercase letter.");
-    } else if (asciiCode >= 48 && asciiCode <= 57) {
-        alert("It's a number.");
-    } else if ((asciiCode >= 32 && asciiCode <= 47) || 
-               (asciiCode >= 58 && asciiCode <= 64) || 
-               (asciiCode >= 91 && asciiCode <= 96) || 
-               (asciiCode >= 123 && asciiCode <= 126)) {
-        alert("It's a punctuation mark.");
-    } else {
-        alert("The character does not fall into any of the specified categories.");
-    }
-}
+//     if (asciiCode >= 65 && asciiCode <= 90) {
+//         alert("It's an uppercase letter.");
+//     } else if (asciiCode >= 97 && asciiCode <= 122) {
+//         alert("It's a lowercase letter.");
+//     } else if (asciiCode >= 48 && asciiCode <= 57) {
+//         alert("It's a number.");
+//     } else if ((asciiCode >= 32 && asciiCode <= 47) || 
+//                (asciiCode >= 58 && asciiCode <= 64) || 
+//                (asciiCode >= 91 && asciiCode <= 96) || 
+//                (asciiCode >= 123 && asciiCode <= 126)) {
+//         alert("It's a punctuation mark.");
+//     } else {
+//         alert("The character does not fall into any of the specified categories.");
+//     }
+// }
 
 
 
@@ -155,6 +155,43 @@ console.log("apple">"banana");
 // else if (hours>=21 && hours<24){
 //     alert("Good Night");
 // }
+
+
+// practice 
+// function assessNumber(a,b,c){
+//     if (a>5||b<10||c===0){
+//         return"condition A";
+//     }
+//     else if(a===b&&b===c){
+//         return"condition B"
+//     }
+//     else if(!(a<0||b<0||c<0)){
+//         return"condition C"
+//     }
+//     else{
+//         return "conditionD"
+//     }
+
+// }
+ 
+
+
+var userInput = +prompt("enter number")
+if(userInput== null || ""){
+    alert("please enter number")
+}
+else{
+    if(userInput>5 && userInput<10){
+        alert("condition A")
+    }
+    else if (userInput<0||userInput>20){
+        alert("condition B")
+    }
+    else if(userInput==0 ){
+        alert("condition c")
+    }
+}
+
 
 
 
