@@ -176,21 +176,40 @@ console.log("apple">"banana");
  
 
 
-var userInput = +prompt("enter number")
-if(userInput== null || ""){
-    alert("please enter number")
-}
-else{
-    if(userInput>5 && userInput<10){
-        alert("condition A")
-    }
-    else if (userInput<0||userInput>20){
-        alert("condition B")
-    }
-    else if(userInput==0 ){
-        alert("condition c")
-    }
-}
+// var userInput = +prompt("enter number")
+// if(userInput== null || ""){
+//     alert("please enter number")
+// }
+// else{
+//     if(userInput>0 && userInput<10){
+//         alert("condition A")
+//     }
+//     else if (userInput<0||userInput>20){
+//         alert("condition B")
+//     }
+//     else if(userInput==0 ){
+//         alert("condition c")
+//     }
+// }
+var myData=["42301345678","Tayyaba","Karachi"]
+var userData =[prompt(typeof "Enter your CNIC","42301"),
+    prompt("Your Name:"),
+    prompt("Your Residence:")
+] 
+console.log(userData)
+// if (userData==myData){
+//     console.log("you are hired")
+// }
+// else{
+//     console.log("sorry👦")
+// }
+// console.log(userData[1]);
+// here we are taking input from user ,when user provide data we are asking for the data stored at the index number of 1 
+// so we can add more prompts in one go .and also can save them in one var
+// console.table(userData)
+
+
+
 
 
 
