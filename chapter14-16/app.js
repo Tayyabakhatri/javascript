@@ -196,24 +196,31 @@ devices.push("Keyboard");
 devices.push("mouse");
 devices.push("printer");
 devices.push("monitor");
- console.log(devices.pop());
- console.log(devices.pop());
- console.log(devices.pop());
- console.log(devices.pop());
+console.log(devices.pop());
+console.log(devices.pop());
+console.log(devices.pop());
+console.log(devices.pop());
 
 //  here we can use loop method for grtting values without removing values .since we havent learned that so i have used pop 
 
 
 // 15. Write a program to store phone manufacturers (Apple,
-    // Samsung, Motorola, Nokia, Sony & Haier) in an array.
-    // Display the following dropdown/select menu in your
-    // browser using document.write() method:
-var  phoneManufacturers= ["Apple","Samsung","Motorola","Nokia","Sony","Haier"];
-document.write("<br><br> <select>")
-for (var i = 0; i < phoneManufacturers.length; i++) {
-    document.write('<option value="' + phoneManufacturers[i] + '">' + phoneManufacturers[i] + '</option>');
-}
-document.write('</select>');
+// Samsung, Motorola, Nokia, Sony & Haier) in an array.
+// Display the following dropdown/select menu in your
+// browser using document.write() method:
+var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+// document.write("<br><br> <select>")
+// document.write("<option>"+phoneManufacturers[0]+"</option>")
+// document.write("<option>"+phoneManufacturers[1]+"</option>")
+// document.write("<option>"+phoneManufacturers[2]+"</option>")
+// document.write("<option>"+phoneManufacturers[3]+"</option>")
+// document.write('</select>');
+
+// document.write(`<select><option>${phoneManufacturers[0]}</option>
+// <option>${phoneManufacturers[1]}</option>
+// <option>${phoneManufacturers[2]}</option>
+// <option>${phoneManufacturers[3]}</option>
+// </select>`)
 
 
 
