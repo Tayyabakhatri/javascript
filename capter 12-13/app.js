@@ -146,13 +146,13 @@ console.log("apple">"banana");
 // if(hours>=6 && hours<12){
 //     alert("Good Morning");
 // }
-// else if(hours>=12 && hours<18){
+// else if(hours>=12 && hours<=16){
 //     alert("Good Afternoon");
 // }
-// else if (hours>=18 && hours<24){
+// else if (hours>16 && hours<=21){
 //     alert("Good evening ");
 // }
-// else if (hours>=21 && hours<24){
+// else if (hours>21 && hours<=24){
 //     alert("Good Night");
 // }
 

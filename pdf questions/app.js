@@ -1,0 +1,6 @@
+var dishes = prompt("enter any 5 dishes name you like the most")
+var dish1 = console.log(dishes.split(","),("  ")[0])
+var dish2 = console.log(dishes.split(","),("  ")[1])
+var dish3 = console.log(dishes.split(","),("  ")[2])
+var dish4 = console.log(dishes.split(","),("  ")[3])
+var dish5 = console.log(dishes.split(","),("  ")[4])
