@@ -60,19 +60,19 @@
 //         document.write(i+"<br>"+"<hr>"  )
 //     }
 // }
-// document.write("question 6 d<br>")
-// for (var i=0; i<=20; i++){
-//     if(i%2!=0){
-//         document.write(i+"<br>"+"<hr>"  )
-//     }
-// }  
+document.write("question 6 d<br>")
+for (var i=0; i<=20; i++){
+    if(i%2!=0){
+        document.write(i+"<br>"+"<hr>"  )
+    }
+}  
 
-// document.write("question 6 e<br>")
-// for (var i=0; i<=20; i++){
-//     if(i%2==0){
-//         document.write(i+"k"+"<br>"+"<hr>"  )
-//     }
-// }
+document.write("question 6 e<br>")
+for (var i=0; i<=20; i++){
+    if(i%2==0){
+        document.write(i+"k"+"<br>"+"<hr>"  )
+    }
+}
 
 
 // 7. You have an array
@@ -81,15 +81,15 @@
 // array.
 // After searching, prompt the user whether the given item is
 // found in the list or not.
-// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
-// var userInput = prompt("Welcome to our ABC bakery.What do you want to order maam/sir?")
-// if(A.includes(userInput)){
+var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+var userInput = prompt("Welcome to our ABC bakery.What do you want to order maam/sir?")
+if(A.includes(userInput)){
 
-//     alert(userInput+" is available at index "+`${A.indexOf(userInput)}`+" in our bakery")
-// }
-// else if (!A.includes(userInput)){
-//     alert(userInput+" is not available "+"in our bakery")
-// }
+    alert(userInput+" is available at index "+`${A.indexOf(userInput)}`+" in our bakery")
+}
+else if (!A.includes(userInput)){
+    alert(userInput+" is not available "+"in our bakery")
+}
 
 // 8. Write a program to identify the largest number in the
 // given array.
