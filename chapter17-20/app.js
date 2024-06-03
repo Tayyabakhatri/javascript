@@ -44,22 +44,22 @@
 // e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
 
 // a.
-// var count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-// document.write("question 6 a<br>")
-// for (var i=1; i<=15; i++){
-//     document.write(i+"<br>"+"<hr>")
-// }
-// document.write("question 6 b<br>")
-// // b.
-// for(var i = 10 ; i>=1; i--){
-//     document.write(i+"<br>"+"<hr>")
-// }
-// document.write("question 6 c<br>")
-// for (var i=0; i<=20; i++){
-//     if(i%2==0){
-//         document.write(i+"<br>"+"<hr>"  )
-//     }
-// }
+var count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+document.write("question 6 a<br>")
+for (var i=1; i<=15; i++){
+    document.write(i+"<br>"+"<hr>")
+}
+document.write("question 6 b<br>")
+// b.
+for(var i = 10 ; i>=1; i--){
+    document.write(i+"<br>"+"<hr>")
+}
+document.write("question 6 c<br>")
+for (var i=0; i<=20; i++){
+    if(i%2==0){
+        document.write(i+"<br>"+"<hr>"  )
+    }
+}
 document.write("question 6 d<br>")
 for (var i=0; i<=20; i++){
     if(i%2!=0){
@@ -94,24 +94,37 @@ else if (!A.includes(userInput)){
 // 8. Write a program to identify the largest number in the
 // given array.
 var num = [24, 53, 78, 91, 12];
-num.sort()
-console.log(num)
+var largestNum = num[0];
+for(var i=0; i<num.length;i++){
+    if(num[i]>largestNum){
+        console.log(largestNum =num[i])
+    }
+}
+
+   
+
 
 
 
 
 // 9. Write a program to identify the smallest number in the
 // given array.
-var smallestNum = [24, 53, 78, 91, 12]
+var numArr= [24, 53, 78, 91, 12]
+var smallestNum = numArr[0]
+for(var i=0; i<numArr.length; i++){
+    if(numArr[i]<smallestNum){
+        console.log(smallestNum=numArr[i])
+    }
+}
 
 // 10. Write a program to print multiples of 5 ranging 1 to
 // 100
 
-for(var i=1 ; i<=100 ;i++){
-    if(i%5==0){
-        document.write("<br>"+i)
-    }
-}
+// for(var i=1 ; i<=100 ;i++){
+//     if(i%5==0){
+//         document.write("<br>"+i)
+//     }
+// }
 
 
 
