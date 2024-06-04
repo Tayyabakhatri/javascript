@@ -123,30 +123,67 @@
 // Write a simple JavaScript program to join all elements of the following array into 
 // a string. 
 
-var colors = ["red","black","green","white"]
-colors.join()
-document.write(colors)
+// var colors = ["red","black","green","white"]
+// colors.join()
+// document.write(colors)
 
-document.write("<br>"+colors.toString())
- document.write("<br>"+colors.join("-"))
+// document.write("<br>"+colors.toString())
+//  document.write("<br>"+colors.join("-"))
  
 
 //  Write a JavaScript program to sort the items of an array. 
- var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]; 
- arr1.sort()
- console.log(arr1)
+//  var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]; 
+//  arr1.sort()
+//  console.log(arr1)
 
 //  Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will 
 // check if the current number is odd or even, and display a message to the screen.
 
-for(i=0; i<=15;i++){
-    if(i%2==0){
-        console.log(i+" is an even number")
-    }
-    else if(i%2!=0){
-        console.log(i+" is an odd Number ")
+// for(i=0; i<=15;i++){
+//     if(i%2==0){
+//         console.log(i+" is an even number")
+//     }
+//     else if(i%2!=0){
+//         console.log(i+" is an odd Number ")
+//     }
+// }
+
+
+// **Project Idea:** Text Reverser and Word Counter
+
+// **Description:** A simple tool that takes a string of text as input and provides two functionalities:
+// 1. Reverse the text.
+// 2. Count the number of words in the text.
+
+// var userInput = prompt("write any thing you want");
+// var splittedArr = userInput.split(" ");
+// console.log(splittedArr);
+// var reversedArr=splittedArr.reverse();
+// console.log(reversedArr)
+// console.log(reversedArr.length);
+
+
+// 2. **Menu for Options:**
+//    - Display a menu with options to reverse the text or count the words.
+//    - Prompt the user to choose an option.
+var userInput = prompt("enter your text here");
+userInput.split("");
+var opt=["reverse","count"]
+document.write("<select>")
+document.write("<option>"+opt[0])
+document.write("<option>"+opt[1])
+document.write("</select>");
+var option=opt[0] ;
+if(option==opt[0]){
+    for(var i=0; i<option.length;i++){
+        console.log(userInput.reverse())
     }
 }
+
+// var splittedText=userInput.split("").reverse();
+// console.log(splittedText)
+
+
 
 
 
