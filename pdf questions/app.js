@@ -129,7 +129,7 @@
 
 // document.write("<br>"+colors.toString())
 //  document.write("<br>"+colors.join("-"))
- 
+
 
 //  Write a JavaScript program to sort the items of an array. 
 //  var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]; 
@@ -166,22 +166,20 @@
 // 2. **Menu for Options:**
 //    - Display a menu with options to reverse the text or count the words.
 //    - Prompt the user to choose an option.
-var userInput = prompt("enter your text here");
-userInput.split("");
-var opt=["reverse","count"]
-document.write("<select>")
-document.write("<option>"+opt[0])
-document.write("<option>"+opt[1])
-document.write("</select>");
-var option=opt[0] ;
-if(option==opt[0]){
-    for(var i=0; i<option.length;i++){
-        console.log(userInput.reverse())
-    }
-}
+// var userInput = prompt("enter your text here");
+// splittedArr = userInput.split("").reverse();
+// document.write(splittedArr)
 
-// var splittedText=userInput.split("").reverse();
-// console.log(splittedText)
+
+
+var num=[1,2,3,4,5,6,7,8,9,10,11,12,13];
+for (var i=0; i<=num.length;i++){
+    console.log(num[i]);
+    if(i==7){
+    continue
+}
+       
+}
 
 
 
