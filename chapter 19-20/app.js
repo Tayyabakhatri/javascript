@@ -29,67 +29,50 @@
 
 // star patterns
 // Hollow Square Pattern
-for (var i=0;i<5;i++){
-    for(var j=0;j<5;j++){
-        if (i===0||i===5-1){
-            document.write("*")
-        }
-        else if(j===0||j===5-1){
-            document.write("*")
-        }
-        else{
-            document.write("&nbsp;&nbsp;")
-        }
-
-            
+for (var i = 0; i < 5; i++) {
+  for (var j = 0; j < 5; j++) {
+    if (i === 0 || i === 5 - 1) {
+      document.write("*");
+    } else if (j === 0 || j === 5 - 1) {
+      document.write("*");
+    } else {
+      document.write("&nbsp;&nbsp;");
     }
-    document.write("<br>"); 
-    
+  }
+  document.write("<br>");
 }
 // Right Triangle Pattern in Javascript
-for(var i=0;i<1;i++){
-    document.write("*")
-    document.write("<br>")
-    for(var j=0 ;j<2;j++){
-        document.write("*")
-        
-    }
-    document.write("<br>")
-    for(var k=0;k<3;k++){
-        
-        document.write("*")
-    }
+for (var i = 0; i < 1; i++) {
+  document.write("*");
+  document.write("<br>");
+  for (var j = 0; j < 2; j++) {
+    document.write("*");
+  }
+  document.write("<br>");
+  for (var k = 0; k < 3; k++) {
+    document.write("*");
+  }
+  document.write("<br>");
 }
 
-
-let n = 5;
-let string = "";
-for (let i = 1; i <= n; i++) {
-  // printing spaces
-  for (let j = 0; j < n - i; j++) {
-    string += " ";
-    
+for (var i = 1; i <= 5; i++) {
+  for (var j = 1; j <= i; j++) {
+    document.write("?/");
   }
-  
-  // printing star
-  for (let k = 0; k < i; k++) {
-    string += "*";
-    
-  }
-  
-  string += "\n";
-  
+  document.write("<br>");
 }
 
-console.log(string);
- 
-
-
-
-
+// for (var i=5;i>=0;i--){
+//     for(var j=5;j<=i;j--){
+//         document.write("*")
+//     }
+//     document.write("<br>")
+// // }
 
 // 1. Checking if a Number is in an Array
-var num=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,18,19,20]
+var num = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 18, 19, 20,
+];
 
 // var userNum=+prompt("enter any number");
 // var flag=false;
@@ -135,6 +118,72 @@ var num=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,18,19,20]
 //     alert("your word is not found")
 // }
 
+for (var i = 5; i >= 1; i--) {
+  for (var j = 1; j <= i; j++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
 
+for (var i = 10; i >= 1; i--) {
+  for (var j = 1; j <= i; j++) {
+    document.write("%");
+  }
+  document.write("<br>");
+}
+for (var i = 1; i <= 10; i++) {
+  for (var j = 1; j <= i; j++) {
+    document.write("%");
+  }
+  document.write("<br>");
+}
+var n = 5;
+for (var i = 1; i < 6; i++) {
+  document.write(n + "X" + i + "=" + `${n * i}`);
+  document.write("<br>");
+}
+// document.write("time<br>");
+// for (var i = 1; i <= 12; i++) {
+//   for (var j = 1; j < 61; j++) {
+//     document.write(i + ":" + j);
+//     document.write(" ");
+//     document.write("<br>");
+//   }
+//   document.write("<br>");
+// }
 
+//  pyramid
 
+for (var i = 1; i <= 11; i++) {
+  for (var j = 11; j > i; j--) {
+    document.write(" &nbsp ");
+  }
+  for (var k = 1; k <= 2 * i - 1; k++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+for (var i = 11; i >= 1; i--) {
+  for (var j = 1; j < i; j++) {
+    document.write(" &nbsp ");
+  }
+  for (var k = 1; k <= 2 * i - 1; k++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+
+// dots patterns
+
+for (var i = 1; i <= 10; i++) {
+    for (var j = 1; j <= 10; j++) {
+        if (i === 1 || i === 10 || j === 1 || j === 10) {
+            document.write("*");
+        } else {
+            document.write("&nbsp");
+        }
+    }
+    document.write("<br>");
+}
+   
+    
