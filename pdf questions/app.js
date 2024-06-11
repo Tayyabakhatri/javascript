@@ -38,7 +38,6 @@
 //     console.log("you failed")
 // }
 
-
 // #1 — Print the numbers from 0 to 15
 // for (var i =1 ; i<16;i++){
 //     console.log(i)
@@ -47,7 +46,6 @@
 // for (var i = 12 ;i <25;i++){
 //     console.log(i)
 // }
-
 
 // #3 — Print the ODD numbers from 7 to 31
 
@@ -63,7 +61,6 @@
 //         console.log(i)
 //     }
 // }
-
 
 // #5 — Iterate through all numbers from 1 to 45. Print the following:
 
@@ -89,7 +86,6 @@
 //     console.log(thisIsAnArray[i])
 // }
 
-
 // #7 — Calculate the sum of all the numbers in the following array
 // var numbersArray = [1,13,22,123,49]
 // var sum =0;
@@ -98,14 +94,12 @@
 // }
 // console.log(sum)
 
-
-// table 
+// table
 // var userNum = +prompt("enter your number:");
 // var timesTable = +prompt("how much time you want this table?");
 // for(i = 1 ;i<=timesTable;i++){
 //     document.write(userNum+"X"+i+ "="+userNum*i+"<br>")
 // }
-
 
 // Write a JavaScript program that accept two integers and display the larger.
 // var num_1 = prompt("enter first number:");
@@ -120,8 +114,8 @@
 //     console.log("both are same")
 // }
 
-// Write a simple JavaScript program to join all elements of the following array into 
-// a string. 
+// Write a simple JavaScript program to join all elements of the following array into
+// a string.
 
 // var colors = ["red","black","green","white"]
 // colors.join()
@@ -130,13 +124,12 @@
 // document.write("<br>"+colors.toString())
 //  document.write("<br>"+colors.join("-"))
 
-
-//  Write a JavaScript program to sort the items of an array. 
-//  var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]; 
+//  Write a JavaScript program to sort the items of an array.
+//  var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
 //  arr1.sort()
 //  console.log(arr1)
 
-//  Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will 
+//  Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will
 // check if the current number is odd or even, and display a message to the screen.
 
 // for(i=0; i<=15;i++){
@@ -147,7 +140,6 @@
 //         console.log(i+" is an odd Number ")
 //     }
 // }
-
 
 // **Project Idea:** Text Reverser and Word Counter
 
@@ -162,7 +154,6 @@
 // console.log(reversedArr)
 // console.log(reversedArr.length);
 
-
 // 2. **Menu for Options:**
 //    - Display a menu with options to reverse the text or count the words.
 //    - Prompt the user to choose an option.
@@ -170,20 +161,20 @@
 // splittedArr = userInput.split("").reverse();
 // document.write(splittedArr)
 
+// var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+// for (var i = 0; i <= num.length; i++) {
+//   console.log(num[i]);
+//   if (i == 7) {
+//     continue;
+//   }
+// }
+
+// 6. Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.
+var userNum = [+prompt("enter number:")];
 
 
-var num=[1,2,3,4,5,6,7,8,9,10,11,12,13];
-for (var i=0; i<=num.length;i++){
-    console.log(num[i]);
-    if(i==7){
-    continue
-}
-       
-}
+// for(var i=0; i<7;i++){
 
-
-
-
-
+// }
 
 
