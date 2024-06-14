@@ -169,16 +169,7 @@
 //   }
 // }
 
-// 6. Write a JavaScript program that accepts a number as input and
-//inserts dashes (-) between each even number. For example 
-//if you accept 025468 the output should be 0-254-6-8.
-var userNum = prompt("enter number (seperated by space)");
-var splittedArr = userNum.split(" ");
 
-for (var i = 0; i < splittedArr.length; i++) {
-  if (splittedArr[i] % 2 == 0) {
-  
-    // var result = "-" + splittedArr[i];
-    // console.log(result);
-  }
-}
+
+
+
