@@ -68,7 +68,7 @@
   }
   
   for(var i = 0; i<n; i++){
-    for(var j = 5; j>i;j--){
+    for(var j = 5; j>=i; j--){
       document.write("*")
     }
     document.write("<br>")
@@ -78,15 +78,16 @@
 
 
 // // 11. Hollow Diamond Pattern
+document.write("mera wala <br>")
 n=5
-  for(var i = 0; i <= n; i++){
-    for(var j = 0; j<=i; j++){
-      if(i==0||i==n||j==0||j==i){
+  for(var i = 0; i < n; i++){
+    for(var j = 0; j<i; j++){
+      if(j==0||j==n){
 
         document.write("*")
       }
       else{
-        document.write("&nbsp;")
+        document.write("&nbsp;&nbsp;")
       }
     }
     document.write("<br>")
@@ -98,13 +99,56 @@ n=5
       document.write("*")
      }
      else{
-      document.write(" &nbsp;")
+      document.write(" &nbsp;&nbsp;")
      }
     }
     document.write("<br>")
   }
+
+  document.write("chat gpt wala <br>")
+
+    var n = 5;
+
+    // Upper part of the hollow diamond
+    for (var i = 0; i < n; i++) {
+      // Printing leading spaces
+      for (var j = 0; j < n - i - 1; j++) {
+        document.write("&nbsp;&nbsp;");
+      }
+      // Printing stars and spaces inside
+      for (var j = 0; j <= i; j++) {
+        if (j == 0 || j == i) {
+          document.write("* ");
+        } else {
+          document.write("&nbsp;&nbsp;");
+        }
+      }
+      document.write("<br>");
+    }
+
+    // Lower part of the hollow diamond
+    for (var i = n - 1; i > 0; i--) {
+      // Printing leading spaces
+      for (var j = 0; j < n - i; j++) {
+        document.write("&nbsp;&nbsp;");
+      }
+      // Printing stars and spaces inside
+      for (var j = 0; j < i; j++) {
+        if (j == 0 || j == i - 1) {
+          document.write("* ");
+        } else {
+          document.write("&nbsp;&nbsp;");
+        }
+      }
+      document.write("<br>");
+    }
+  
+
 // 12. Hourglass Star Pattern
 // 13. Right Pascal Star Pattern
 // 14. Left Pascal Star Pattern
 // 15. Heart Star Pattern In JavaScript
+
+
+
 
