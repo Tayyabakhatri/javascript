@@ -149,6 +149,26 @@ n=5
 // 14. Left Pascal Star Pattern
 // 15. Heart Star Pattern In JavaScript
 
+var arr1=[[0,1,2],[3,4,5],[6,7,8]];
+var arr2=[[1,2,3],[4,5,6],[7,8,9]];
+var multiple=[]
+for(var i=0; i<arr1.length;i++){
+  multiple[i]=[];
+  for(var j=0; j<arr2[i].length;j++){
+    multiple[i][j]=arr1[i][j]*arr2[j][i];
+  }
+  console.log(multiple)
+  
+
+  document.write("<br>")
+}
+var t=5
+
+for(var i = 0; i <= t; i++){
+  for(var j = 0; j <= i; j++)
+  document.write("*")
+document.write("<br>")
+}
 
 
 
