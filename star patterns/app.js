@@ -199,5 +199,42 @@ for (var i = 0; i <= t; i++) {
 //chapter 21 practice
 //changing case
 var userName = "tayyaba";
-var changeCase = userName.toUpperCase;
+var changeCase = userName.toUpperCase();
 console.log(changeCase)
+
+
+
+
+
+var arr1 = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+];
+var arr2 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+var multiple = [];
+var result = "";
+
+// Correct matrix multiplication logic
+for (var i = 0; i < arr1.length; i++) {
+  multiple[i] = [];
+  for (var j = 0; j < arr2[0].length; j++) {
+    var sum = 0;
+    for (var k = 0; k < arr1[0].length; k++) {
+      sum += arr1[i][k] * arr2[k][j];
+    }
+    multiple[i][j] = sum;
+  }
+  result += multiple[i].join(" ") + "<br>";
+}
+
+document.write(result);
+
+var t = 5;
+result = "";
+
+
