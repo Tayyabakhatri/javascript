@@ -234,7 +234,6 @@ for (var i = 0; i < arr1.length; i++) {
 
 document.write(result);
 
-var t = 5;
-result = "";
+
 
 
