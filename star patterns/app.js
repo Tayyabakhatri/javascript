@@ -158,7 +158,7 @@ for (var i = 0; i < arr1.length; i++) {
   for (var j = 0; j < arr2[i].length; j++) {
     multiple[i][j] = arr1[i][j] * arr2[j][i];
   }
-  console.log(multiple);
+ document.write(multiple);
 
   document.write("<br>");
 }
@@ -182,16 +182,22 @@ for (var i = 0; i <= t; i++) {
 // }
 
 
-var city = ["karachi", "lahore", "peshawar", "sialkot", "quetta", "abbotabad"];
-var userCity = prompt("enter your city:")
-var flag = false
-for(var i = 0; i<city.length; i++){
-  if(userCity===city[i]){
-    alert("your city found")
-    flag = true
-    break;
-  }
-}
-if(userCity!==city[i]){
-alert("not found")
-}
+// var city = ["karachi", "lahore", "peshawar", "sialkot", "quetta", "abbotabad"];
+// var userCity = prompt("enter your city:")
+// var flag = false
+// for(var i = 0; i<city.length; i++){
+//   if(userCity===city[i]){
+//     alert("your city found")
+//     flag = true
+//     break;
+//   }
+// }
+// if(userCity!==city[i]){
+// alert("not found")
+// }
+
+//chapter 21 practice
+//changing case
+var userName = "tayyaba";
+var changeCase = userName.toUpperCase;
+console.log(changeCase)
