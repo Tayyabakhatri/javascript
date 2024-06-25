@@ -236,4 +236,40 @@ document.write(result);
 
 
 
+// Define the input string.
+// Initialize an empty result string.
+// Loop through each character in the input string.
+// For each character, check if it is lowercase. If so, convert it to uppercase.
+// If the character is uppercase, convert it to lowercase.
+// Append the converted character to the result string.
+// Print the original and the changed case string.
+
+// var userInput = prompt("enter any text");
+// var userlength = userInput.length
+
+// var result ;
+// for(var i = 0 ; i < userlength ; i++ ){
+//   if(userInput[i]== userInput[i].toLowerCase()){
+//    result= userInput[i].toUpperCase()
+//   }
+//   else if(userInput[i]==userInput[i].toUpperCase()){
+//     result=userInput[i].toLowerCase()
+//   }
+//   console.log(result);
+// }
+
+
+
+// write a program of changing case in to tilttle case
+var input = prompt("write a paragraph");
+var splitted = input.split(" ");
+var tlttleCase = [];
+for(var i = 0 ; i < splitted.length; i++){
+  var upper = splitted[i][0].toUpperCase();
+  var lower = splitted[i].slice(1).toLowerCase();
+  tlttleCase.push(upper+lower);
+}
+var result = tlttleCase.join(" ");
+console.log(result)
+
 
