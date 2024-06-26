@@ -261,15 +261,37 @@ document.write(result);
 
 
 // write a program of changing case in to tilttle case
-var input = prompt("write a paragraph");
-var splitted = input.split(" ");
-var tlttleCase = [];
-for(var i = 0 ; i < splitted.length; i++){
-  var upper = splitted[i][0].toUpperCase();
-  var lower = splitted[i].slice(1).toLowerCase();
-  tlttleCase.push(upper+lower);
-}
-var result = tlttleCase.join(" ");
-console.log(result)
+// var input = prompt("write a paragraph");
+// var splitted = input.split(" ");
+// var tlttleCase = [];
+// for(var i = 0 ; i < splitted.length; i++){
+//   var upper = splitted[i][0].toUpperCase();
+//   var lower = splitted[i].slice(1).toLowerCase();
+//   tlttleCase.push(upper+lower);
+// }
+// var result = tlttleCase.join(" ");
+// console.log(result)
 
+
+
+
+
+// var userPassward = parseInt(prompt("Enter  length of passward you want to generate"));
+// var passward = Math.random()*3
+// var passwardLength = passward.toFixed(userPassward);
+// console.log(passwardLength);
+
+
+
+var player1 = prompt("first player : Enter your name.")
+var player2 = prompt("second player : Enter your name.")
+var toss = prompt(player1+"what would you choose HEAD or TAIL?")
+var  randomNum = Math.random()*2
+var roundingNum = Math.floor(randomNum)
+if (toss = "head"&& roundingNum==1){
+  alert(player1+"you won")
+}
+else{
+  alert(player1+"you lose")
+}
 
