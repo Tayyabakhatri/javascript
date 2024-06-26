@@ -276,11 +276,11 @@ document.write(result);
 
 
 
-var userPassward = parseInt(prompt("Enter  length of passward you want to generate"));
+// var userPassward = parseInt(prompt("Enter  length of passward you want to generate"));
 
-var passward = Math.random(characters)*3
-var passwardLength = passward.toFixed(userPassward);
-console.log(passwardLength);
+// var passward = Math.random(characters)*3
+// var passwardLength = passward.toFixed(userPassward);
+// console.log(passwardLength);
 
 
 
@@ -296,3 +296,13 @@ console.log(passwardLength);
 //   alert(player1+"you lose")
 // }
 
+
+
+var fruits = ["mango" , "banana" , "peach" , "papaya"];
+// var index= (fruits.indexOf("papaya"))
+// console.log(index)
+
+for( var i = 0 ; i < fruits.length; i++){
+  var index = fruits.indexOf(fruits.charAt[i])
+}
+console.log(index)
