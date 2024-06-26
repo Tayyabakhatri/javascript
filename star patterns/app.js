@@ -276,22 +276,23 @@ document.write(result);
 
 
 
-// var userPassward = parseInt(prompt("Enter  length of passward you want to generate"));
-// var passward = Math.random()*3
-// var passwardLength = passward.toFixed(userPassward);
-// console.log(passwardLength);
+var userPassward = parseInt(prompt("Enter  length of passward you want to generate"));
+
+var passward = Math.random(characters)*3
+var passwardLength = passward.toFixed(userPassward);
+console.log(passwardLength);
 
 
 
-var player1 = prompt("first player : Enter your name.")
-var player2 = prompt("second player : Enter your name.")
-var toss = prompt(player1+"what would you choose HEAD or TAIL?")
-var  randomNum = Math.random()*2
-var roundingNum = Math.floor(randomNum)
-if (toss = "head"&& roundingNum==1){
-  alert(player1+"you won")
-}
-else{
-  alert(player1+"you lose")
-}
+// var player1 = prompt("first player : Enter your name.")
+// var player2 = prompt("second player : Enter your name.")
+// var toss = prompt(player1+"what would you choose HEAD or TAIL?")
+// var  randomNum = Math.random()*2
+// var roundingNum = Math.floor(randomNum)
+// if (toss = "head"&& roundingNum==1){
+//   alert(player1+"you won")
+// }
+// else{
+//   alert(player1+"you lose")
+// }
 
