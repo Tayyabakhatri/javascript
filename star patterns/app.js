@@ -274,16 +274,7 @@ document.write(result);
 
 
 
-
-
-// var userPassward = parseInt(prompt("Enter  length of passward you want to generate"));
-
-// var passward = Math.random(characters)*3
-// var passwardLength = passward.toFixed(userPassward);
-// console.log(passwardLength);
-
-
-
+//task 1 game of head and tail
 // var player1 = prompt("first player : Enter your name.")
 // var player2 = prompt("second player : Enter your name.")
 // var toss = prompt(player1+"what would you choose HEAD or TAIL?")
@@ -296,13 +287,25 @@ document.write(result);
 //   alert(player1+"you lose")
 // }
 
+//task 2 random passwar generator
+// var userPassword = parseInt(prompt("enter length of the passward you want to generate"));
+// var characters = "AZXCVBNMKJHGFDSQWERTYUIOPqwertyuioplkjhgfdsazxcvbnm1234567890!@#$%^&*()_+=-/.,<>?[]{};':"
+// var passward = [];
+// for ( var i = 0 ; i < userPassword;i++){
+//   var randomchar = Math.floor(Math.random()*characters.length)
+//   passward.push(characters[randomchar])
+// }
+// var result=passward.join("")
+// document.write("passward: " +result)
+
+
+//task 2 
+
+
 
 
 var fruits = ["mango" , "banana" , "peach" , "papaya"];
 // var index= (fruits.indexOf("papaya"))
 // console.log(index)
 
-for( var i = 0 ; i < fruits.length; i++){
-  var index = fruits.indexOf(fruits.charAt[i])
-}
-console.log(index)
+
