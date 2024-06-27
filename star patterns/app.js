@@ -299,7 +299,24 @@ document.write(result);
 // document.write("passward: " +result)
 
 
-//task 2 
+//task 3 
+var name1 = "Tayyaba";
+// var position = [];
+// for (var i = 0 ; i < name1.length; i++){
+//   if (name1[i]== "a"){
+//     position.push(i)
+//   }
+// }
+// console.log(position)
+
+var splitted = name1.split("")
+console.log(splitted)
+for( var i = 0 ; i <splitted.length; i++){
+  if (splitted[i]=="a"){
+    console.log(i)
+  }
+}
+
 
 
 
@@ -307,5 +324,3 @@ document.write(result);
 var fruits = ["mango" , "banana" , "peach" , "papaya"];
 // var index= (fruits.indexOf("papaya"))
 // console.log(index)
-
-
