@@ -210,48 +210,46 @@ document.write("<hr>");
 // For character codes of a-z, A-Z & 0-9, refer to ASCII
 // table at the end of this document.
 
-var userPasswar = prompt("enter your passward:");
+// var userPasswar = prompt("enter your passward:");
 
-if (userPasswar.length < 6) {
-  alert("Passward should be atleast 6 characters");
-}
-if (userPasswar.charCodeAt(0) >= 48 && userPasswar.charCodeAt(0) <= 57) {
-  alert("passward should not start with a number");
-}
-for (var i = 0; i < userPasswar.length; i++) {
-  var charCode = userPasswar.charCodeAt(i);
-  if (
-    (charCode >= 65 && charCode <= 90) ||
-    (charCode >= 97 && charCode <= 122)
-  ) {
-    var hasLetter = true;
-  } else if (charCode >= 48 && charCode <= 57) {
-   var  hasNumber = true;
-  }
-  if(hasLetter&&hasNumber){
-    
-    break;
-  }
-  
-}
-if (!hasLetter || !hasNumber) {
-  alert("Password must contain both alphabets and numbers");
-} else {
-  alert("Password is valid");
-}
+// if (userPasswar.length < 6) {
+//   alert("Passward should be atleast 6 characters");
+// }
+// if (userPasswar.charCodeAt(0) >= 48 && userPasswar.charCodeAt(0) <= 57) {
+//   alert("passward should not start with a number");
+// }
+// for (var i = 0; i < userPasswar.length; i++) {
+//   var charCode = userPasswar.charCodeAt(i);
+//   if (
+//     (charCode >= 65 && charCode <= 90) ||
+//     (charCode >= 97 && charCode <= 122)
+//   ) {
+//     var hasLetter = true;
+//   } else if (charCode >= 48 && charCode <= 57) {
+//     var hasNumber = true;
+//   }
+//   if (hasLetter && hasNumber) {
+//     break;
+//   }
+// }
+// if (!hasLetter || !hasNumber) {
+//   alert("Password must contain both alphabets and numbers");
+// } else {
+//   alert("Password is valid");
+// }
 
 // 16. Write a program to convert the following string to an
 // array using string split method.
 // var university = “University of Karachi”;
 // Display the elements of array in your browser.
 
-var university = "University of Karachi";
-var ary = university.split("");
+// var university = "University of Karachi";
+// var ary = university.split("");
 
-for (var i = 0; i < ary.length; i++) {
-  document.write(ary[i] + "<br>");
-}
-document.write("<hr>");
+// for (var i = 0; i < ary.length; i++) {
+//   document.write(ary[i] + "<br>");
+// }
+// document.write("<hr>");
 
 // 17. Write a program to display the last character of a user
 // input.
@@ -266,20 +264,101 @@ document.write("<hr>");
 // lazy dog”. Write a program to count number of
 // occurrences of word “the” in given string.
 
-var str = "The quick brown fox jumps over the  lazy dog";
-var strCaseInsensitive = str.toLowerCase();
-var count = [];
-for (var i = 0; i < strCaseInsensitive.length; i++) {
-  if (strCaseInsensitive.slice(i, i + 3) == "the") {
-    count.push(strCaseInsensitive.slice(i, i + 3));
-  }
-}
-console.log(count.length);
-document.write(
-  "Text: " +
-    str +
-    "<br>" +
-    "There are " +
-    count.length +
-    "accurance(s) of word 'the'"
-);
+// var str = "The quick brown fox jumps over the  lazy dog";
+// var strCaseInsensitive = str.toLowerCase();
+// var count = [];
+// for (var i = 0; i < strCaseInsensitive.length; i++) {
+//   if (strCaseInsensitive.slice(i, i + 3) == "the") {
+//     count.push(strCaseInsensitive.slice(i, i + 3));
+//   }
+// }
+// console.log(count.length);
+// document.write(
+//   "Text: " +
+//     str +
+//     "<br>" +
+//     "There are " +
+//     count.length +
+//     "accurance(s) of word 'the'"
+// );
+
+// chapter 26 -30
+
+// 1. Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+// var posInt = prompt(" Enter a positive integer ");
+// var roundOf = Math.round(posInt);
+// var floorrValue = Math.floor(posInt);
+// var cielValue = Math.ceil(posInt);
+// document.write(
+//   "number : " +
+//     posInt +
+//     "<br>" +
+//     " round off value of the number" +
+//     roundOf +
+//     "<br>" +
+//     "floor value of the number" +
+//     floorrValue +
+//     "<br>" +
+//     "ceil value of the number" +
+//     cielValue
+// );
+
+
+// 2. Write a program that takes a negative floating point
+// number from user & display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+// var posInt = prompt(" Enter a negative integer ");
+ 
+// var roundOf = Math.round(posInt);
+// var floorrValue = Math.floor(posInt);
+// var cielValue = Math.ceil(posInt);
+// document.write(
+//   "number : " +
+//     posInt +
+//     "<br>" +
+//     " round off value of the number" +
+//     roundOf +
+//     "<br>" +
+//     "floor value of the number" +
+//     floorrValue +
+//     "<br>" +
+//     "ceil value of the number" +
+//     cielValue
+// );
+
+
+
+
+// 3. Write a program that displays the absolute value of a
+// number.
+// E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+
+// 6. Write a program that shows a random number between 1
+// and 100 in your browser.
+// var input = prompt("enter any num")
+var random = Math.random()*100
+var round = Math.round(random)
+document.write(round)
+
+document.write("<br>");
+// 7. Write a program that asks the user about his weight. Parse
+// the user input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+
+
+
