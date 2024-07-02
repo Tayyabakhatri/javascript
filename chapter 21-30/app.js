@@ -283,7 +283,7 @@ document.write("<hr>");
 // );
 
 // chapter 26 -30
-
+document.write("<hr>");
 // 1. Write a program that takes a positive integer from user &
 // display the following in your browser.
 // a. number
@@ -308,7 +308,7 @@ document.write("<hr>");
 //     "ceil value of the number" +
 //     cielValue
 // );
-
+document.write("<hr>");
 
 // 2. Write a program that takes a negative floating point
 // number from user & display the following in your browser.
@@ -338,20 +338,58 @@ document.write("<hr>");
 
 
 
-
+document.write("<hr>");
 // 3. Write a program that displays the absolute value of a
 // number.
 // E.g. absolute value of -4 is 4 & absolute value of 5 is 5
 
 
+// var num = prompt("Enter any number:");
+// var absoluteValue ;
+// if( num < 0 ){
+//   absoluteValue = -num
+// }
+// else if (num>=0){
+//   absoluteValue=num;
+// }
+// alert(absoluteValue)
+
+document.write("<hr>");
+// 4. Write a program that simulates a dice using random()
+// method of JS Math class. Display the value of dice in your
+// browser.:
+
+// var randomdice = Math.random()*(6-1)+1
+// var rounddice = Math.round(randomdice)
+// var randomdice2 = Math.random()(6-1)+1
+// var rounddice2 = Math.round(randomdice2)
+// document.write("random dice value :"+rounddice + "<br>"+"random dice value :"+rounddice2)
+
+document.write("<hr>");
+// 5. Write a program that simulates a coin toss using random()
+// method of JS Math class. Display the value of coin in your
+// browser
+
+// var coinTose =  Math.floor(Math.random()*3);
+// var toss ;
+// if(coinTose==1){
+// toss="Tail";
+// document.write(coinTose+"<br>"+"Random coin value "+toss);
+// }
+// else if (coinTose==2){
+//   toss="Head"
+//   document.write(coinTose+"<br>"+"Random coin value "+toss)
+// }
+ 
+document.write("<hr>");
 // 6. Write a program that shows a random number between 1
 // and 100 in your browser.
 // var input = prompt("enter any num")
-var random = Math.random()*100
-var round = Math.round(random)
-document.write(round)
-
-document.write("<br>");
+// var random = Math.random()*100
+// var round = Math.round(random)
+// document.write(round)
+// document.write("<br>");
+document.write("<hr>");
 // 7. Write a program that asks the user about his weight. Parse
 // the user input and display his weight in your browser.
 // Possible user inputs can be:
@@ -361,4 +399,25 @@ document.write("<br>");
 // d. 50.2kilograms
 
 
+var userWeight = prompt("enter you weight eg ;50 , 50 kgs, 50.2 kgs,etc");
+var weightValue = parseFloat(userWeight)
+if(userWeight==weightValue){
+  document.write(userWeight +"kgs")
+}
 
+document.write("<hr>");
+
+// 8. Write a program that stores a random secret number from
+// 1 to 10 in a variable. Ask the user to input a number
+// between 1 and 10. If the user input equals the secret
+// number, congratulate the user.
+
+// var secretNum = Math.floor(Math.random()*10)+1
+// document.write(secretNum)
+// var UserNum = prompt("enter any secret num (1 to 10):");
+// if(UserNum==secretNum){
+//   alert("congratulations")
+// }
+// else{
+//   alert("sorry")
+// }
