@@ -42,3 +42,10 @@ document.write("<hr>")
 // 5. Write a program that shows the message “First fifteen
 // days of the month” if the date is less than 16th of the month
 // else shows “Last days of the month”
+
+var toDay = new Date();
+var month = toDay.getMonth();
+var months = ["jan","feb","mar","apr","may","june","july","aug","sep","oct","nov","dec"]
+var date = toDay.getDate()
+var days = ["mon","tues","wed","thur","fri","sat","sun"]
+console.log(month);
