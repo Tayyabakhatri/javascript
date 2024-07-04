@@ -29,3 +29,16 @@ document.write("<hr>")
 
 // 4. Write a program that displays a message “It’s Fun day” if
 // its Saturday or Sunday today.
+// var days = new Date();
+// var day = days.getDay();
+// var allDays = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+// console.log(allDays[day])
+// if(day=="sunday" && days=="sunday"){
+//     alert("its a funday")
+// }
+
+
+
+// 5. Write a program that shows the message “First fifteen
+// days of the month” if the date is less than 16th of the month
+// else shows “Last days of the month”
