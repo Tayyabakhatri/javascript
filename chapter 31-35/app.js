@@ -43,9 +43,61 @@ document.write("<hr>")
 // days of the month” if the date is less than 16th of the month
 // else shows “Last days of the month”
 
-var toDay = new Date();
-var month = toDay.getMonth();
-var months = ["jan","feb","mar","apr","may","june","july","aug","sep","oct","nov","dec"]
-var date = toDay.getDate()
-var days = ["mon","tues","wed","thur","fri","sat","sun"]
-console.log(month);
+// var toDay = new Date();
+// var date = toDay.getDate()
+// var days = ["mon","tues","wed","thur","fri","sat","sun"]
+// console.log(date);
+// if(date < 16 ){
+//     alert("First fifteen days of the month")
+// }
+// else{
+//     alert("Last days of the month")
+// }
+
+
+
+// 6. Write a program that determines the minutes since
+// midnight, Jan. 1, 1970 and assigns it to a variable that
+// hasn't been declared beforehand. Use any variable you like
+// to represent the Date object.
+
+var toDay = new Date ();
+document.write("Current Date :"+toDay+"<br>")
+var milisec = toDay.getTime()
+document.write("Elapsed miliseconds since  jan 1 ,1970 :" +milisec +"<br>")
+var minutes = toDay.getTime()/60000
+//60 sec * 1000 millisec
+var conmin = minutes
+document.write("Elapsed minutes since  jan 1 ,1970 :"+minutes)
+
+
+// 7. Write a program that tests whether it's before noon and
+// alert “Its AM” else “its PM”.
+
+
+var today = new Date ();
+var hours = today.getHours()%12;
+var min = today.getMinutes();
+var ampm =hours>=12? "AM" :"PM" ;
+document.write("<br>"+ "The current time is :"+ +hours+":"+min+ampm);
+// if(hours>=12){
+//     ampm="Am"
+//     console.log(hours+min)
+// }
+
+// 8. Write a program that creates a Date object for the last day
+// of the last month of 2020 and assigns it to variable named
+// laterDate.
+
+var lastDate = new Date("2020,12,31")
+document.write("<br>"+"later date: "+lastDate)
+
+
+
+// 9. Create a date object of the starting date of this Ramadan
+// and alert the number of days past since 1st Ramadan?
+// Note: 1st Ramadan was on June 18, 2015
+
+var ramadan= new Date ("june 18 2015");
+var today = new Date();
+var passedDays = Math.floor(today)
