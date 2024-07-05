@@ -100,9 +100,14 @@ document.write("<br>"+"later date: "+lastDate)
 
 var ramadan= new Date ("june 18 2015");
 var today = new Date();
-var passedDays = Math.floor(today)
+var passedDays = today-ramadan
+var daysDifference = Math.floor(passedDays/(1000*60*60*24))
+alert("Number of days past since 1st Ramadan: " + daysDifference);
 
 
+// 10. Write a program that displays in your browser the
+// seconds that elapsed between the reference date and the
+// beginning of 2015.
 
 var currentTime=new Date ();
 var hourAhead = currentTime.setHours();
