@@ -101,3 +101,9 @@ document.write("<br>"+"later date: "+lastDate)
 var ramadan= new Date ("june 18 2015");
 var today = new Date();
 var passedDays = Math.floor(today)
+
+
+
+var currentTime=new Date ();
+var hourAhead = currentTime.setHours();
+console.log(currentTime)
