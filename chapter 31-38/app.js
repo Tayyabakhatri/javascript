@@ -284,3 +284,22 @@ document.write("<hr>")
 //  }
 
 // squares(num1)
+
+// miss umra 
+
+function factorial(){
+  var userInput = Number(prompt("enter any number for factorial:"));
+  if(userInput<0){
+      alert("error : factorial is not defined for negative number :")
+  }else{
+      var result = 1;
+      for (var i = 2 ; i<= userInput ; i++){
+          var result = result*i
+          console.log(result)
+
+      }
+
+  }
+  alert("the factorial of " + userInput + "is " + result)
+}
+factorial()
