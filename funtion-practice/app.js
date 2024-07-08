@@ -11,6 +11,24 @@ else{
 document.write("The current time is:"+hours+":"+minutes+ampm)
 
 
+function factorial(){
+    var userInput = Number(prompt("enter any number for factorial:"));
+    if(userInput<0){
+        alert("error : factorial is not defined for negative number :")
+    }else{
+        var result = 1;
+        for (var i = 2 ; i<= userInput ; i++){
+            var result = result*i
+            console.log(result)
+
+        }
+
+    }
+    alert("the factorial of " + userInput + "is " + result)
+}
+factorial()
+
+
 
 
 // Certainly! Here are some logic questions related to functions in JavaScript:
