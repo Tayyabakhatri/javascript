@@ -114,8 +114,6 @@ document.write("<hr>");
 // Extract the hours, reset the date object an hour ahead and
 // finally display the date object in your browser.
 
-
-
 document.write("<hr>");
 // 12. Write a program that creates a date object and show the
 // date in an alert box that is reset to 100 years back?
@@ -137,7 +135,7 @@ document.write("<hr>");
 // var diff =Math.floor((today-userDate))
 // document.write("Your Age is :"+diff+"<br>"+"your birthday year is :")
 
-document.write("<hr>")
+document.write("<hr>");
 
 // 14. Write a program to generate your K-Electric bill in your
 // browser. All the amounts should be rounded off to 2
@@ -185,15 +183,14 @@ document.write(
 
 // chapter 35-38
 
-
-document.write("<hr>")
-document.write("chapter 35-38")
-document.write("<br>")
+document.write("<hr>");
+document.write("chapter 35-38");
+document.write("<br>");
 // 1. Write a function that displays current date & time in your
 // browser.
-function currentDate (){
- var  today = new Date ();
- document.write(today)
+function currentDate() {
+  var today = new Date();
+  document.write(today);
 }
 currentDate();
 
@@ -207,9 +204,8 @@ currentDate();
 // }
 // greetUser()
 
-
-document.write("<br>")
-document.write("<hr>")
+document.write("<br>");
+document.write("<hr>");
 // 3. Write a function that adds two numbers (input by user)
 // and returns the sum of two numbers.
 
@@ -222,9 +218,8 @@ document.write("<hr>")
 // }
 // addition(input1,input2)
 
-document.write("<br>")
-document.write("<hr>")
-
+document.write("<br>");
+document.write("<hr>");
 
 // 4. Calculator:
 // Write a function that takes three arguments num1, num2
@@ -253,7 +248,6 @@ document.write("<hr>")
 // }
 // calculator(val1,operator,val2)
 
-
 // 5. Write a function that squares its argument.
 // var num = Number(prompt("enter number for squares"))
 // function squares (num){
@@ -261,6 +255,14 @@ document.write("<hr>")
 // }
 // squares(num)
 
+//or
+
+// function square(userInput) {
+//   var userInput ;
+//  var result =  userInput * userInput;
+//   document.write("The square of a number " +userInput +" is == " +result)
+// }
+// square( userInput = Number(prompt("enter number: ")))
 
 // document.write("<br>")
 // document.write("<hr>")
@@ -270,7 +272,7 @@ document.write("<hr>")
 // function squares (num1){
 //  var factors =[];
 //  var divisor = 2;
- 
+
 //  for( var i =0 ; i <= divisor ; i++){
 //   if(num1%divisor==0){
 //     factors.push(divisor);
@@ -285,21 +287,51 @@ document.write("<hr>")
 
 // squares(num1)
 
-// miss umra 
+// miss umra
 
-function factorial(){
-  var userInput = Number(prompt("enter any number for factorial:"));
-  if(userInput<0){
-      alert("error : factorial is not defined for negative number :")
+// function factorial() {
+//   var userInput = Number(prompt("enter any number for factorial:"));
+//   if (userInput < 0) {
+//     alert("error : factorial is not defined for negative number :");
+//   } else {
+//     var result = 1;
+//     for (var i = 2; i <= userInput; i++) {
+//       var result = result * i;
+//       console.log(result);
+//     }
+//   }
+//   alert("the factorial of " + userInput + "is " + result);
+// }
+// factorial();
+
+// 7. Write a function that take start and end number as inputs
+// & display counting in your browser.
+
+// function counting() {
+//   var userInput1 = Number(prompt("enter start  number "));
+//   var userInput2 = Number(prompt("enter end  number "));
+//   for (var i = userInput1; i <= userInput2; +i++) {
+//     document.write(i);
+//     document.write("<br>");
+//   }
+// }
+// document.write(counting());
+
+
+// 10. Write a JavaScript function that checks whether a passed
+// string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as
+// forward, e.g., madam.
+
+var word =prompt("enter any palindrame word :")
+var splittedArr = word.split();
+var rev = splittedArr.reverse()
+var str = rev.join()
+function palindrame (){
+  if (str != word){
+    document.write("its not a palindrame word :")
   }else{
-      var result = 1;
-      for (var i = 2 ; i<= userInput ; i++){
-          var result = result*i
-          console.log(result)
-
-      }
-
+    document.write("its palindrame word")
   }
-  alert("the factorial of " + userInput + "is " + result)
 }
-factorial()
+palindrame()
