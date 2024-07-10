@@ -318,20 +318,57 @@ document.write("<hr>");
 // document.write(counting());
 
 
+
+// 8. Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
+// Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
+
+
+
+// 9. Write a function that calculates the area of a rectangle.
+//  A = width * height
+//  Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+
+
+// i. Arguments as value
+// function area (width,height){
+// var area = width*height
+// return area
+// }
+// console.log("The area of right angle triangle " +area(4,5))
+
+// ii. Arguments as variables
+function area (){
+var width = Number(prompt("enter width of a rectangle "))
+var height= Number(prompt("enter height of a rectangle"))
+var result = width*height
+return result; 
+}
+
+console.log(area())
+
+
+
+
 // 10. Write a JavaScript function that checks whether a passed
 // string is palindrome or not?
 // A palindrome is word, phrase, or sequence that reads the same backward as
 // forward, e.g., madam.
 
-var word =prompt("enter any palindrame word :")
-var splittedArr = word.split();
-var rev = splittedArr.reverse()
-var str = rev.join()
-function palindrame (){
-  if (str != word){
-    document.write("its not a palindrame word :")
-  }else{
-    document.write("its palindrame word")
-  }
-}
-palindrame()
+// var word =prompt("enter any palindrame word :")
+// var splittedArr = word.split();
+// var rev = splittedArr.reverse()
+// var str = rev.join()
+// function palindrame (){
+//   if (str != word){
+//     document.write("its not a palindrame word :")
+//   }else{
+//     document.write("its palindrame word")
+//   }
+// }
+// palindrame()
