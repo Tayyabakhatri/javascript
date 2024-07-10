@@ -343,14 +343,14 @@ document.write("<hr>");
 // console.log("The area of right angle triangle " +area(4,5))
 
 // ii. Arguments as variables
-function area (){
-var width = Number(prompt("enter width of a rectangle "))
-var height= Number(prompt("enter height of a rectangle"))
-var result = width*height
-return result; 
-}
+// function area (){
+// var width = Number(prompt("enter width of a rectangle "))
+// var height= Number(prompt("enter height of a rectangle"))
+// var result = width*height
+// return result; 
+// }
 
-console.log(area())
+// console.log(area())
 
 
 
@@ -372,3 +372,42 @@ console.log(area())
 //   }
 // }
 // palindrame()
+
+
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+function titleCase (){
+  var userInput = "write any sentence" ;
+  var splittedArr = userInput.split(" ");
+  var result = [];
+  for ( var i = 0 ; i < splittedArr.length ; i++ ){
+    var upper = splittedArr.slice(i,0).toUpperCase()
+    result.push(upper);
+    return result
+  }
+}
+titleCase()
+
+
+
+
+
+// function titleCase() {
+//   var userInput = prompt("Write any sentence:");
+//   var splittedArr = userInput.split(" ");
+//   var result = [];
+  
+//   for (var i = 0; i < splittedArr.length; i++) {
+//       var word = splittedArr[i];
+//       var upper = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+//       result.push(upper);
+//   }
+  
+//   return result.join(" ");
+// }
+
+// console.log(titleCase());
