@@ -69,3 +69,33 @@ console.log(Math.hypot(x,y))
 //     - Explain what higher-order functions are and provide an example of using `map`, `filter`, or `reduce` functions in JavaScript.
 
 // These questions cover various aspects of functions in JavaScript, from basic syntax and scope to advanced concepts like recursion and higher-order functions. They can be used to test understanding and proficiency in using functions effectively in JavaScript programming.
+
+
+
+
+
+// var daysOfWeek = ["mon", "tues", "wed", "thur", "fri", "sat", "sun"];
+// var check = prompt("enter any name of day", "eg ; mon,tues ...").toLowerCase()
+
+// var flag = false;
+// for (var i = 0; i < daysOfWeek.length; i++) {
+
+//     if (check == daysOfWeek[i]) {
+//         flag = true
+//         break;
+//     }
+// }
+//     if (flag) {
+//         switch (check) {
+//             case "sun":
+//                 alert("sunday is a working day")
+//                 break
+//             case "sat":
+//                 alert("saturday is a funday ")
+//                 break
+//             default:
+//                 alert("working days :")
+//                 break
+//         }
+
+//     }
