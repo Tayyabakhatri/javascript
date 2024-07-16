@@ -169,7 +169,64 @@
 //   }
 // }
 
+// chapter case change
+// var cities = [
+//   "karachi",
+//   "hyderabad",
+//   "quetta",
+//   "murree",
+//   "islamabad ",
+//   "lahore",
+// ];
+// var userCity = prompt("Enter your city:  ").toLowerCase();
+// for (var i = 0; i < cities.length; i++) {
+//   if (cities[i] === userCity) {
+//     alert("Your city " + userCity + " " + " is available at " + i);
+//   }
+// }
 
+var mySentence =
+  "I am here learning javascript .i have learnt all other languages ";
+for (var i = 0; i < mySentence.length; i++) {
+  if (mySentence.slice(i, i + 4) === "here") {
+    var change = mySentence.slice(0, i) + "there" + mySentence.slice(i + 4);
+    console.log(change);
+  }
+}
 
+var name = "tayyaba";
+var count = 0;
+for (var i = 0; i < name.length; i++) {
+  if (name[i] === "a") {
+    count++;
+    if (count === 2) {
+      document.write(i);
+    }
+  }
+}
+document.write("<br>");
 
+var mySentence =
+  "I am here learning javascript .i have learnt all other languages ";
+var cha = mySentence.indexOf("I am here");
+// console.log(cha)
+if (cha !== -1) {
+  document.write(
+    mySentence.slice(0, cha) + "we are there" + mySentence.slice(i + 2)
+  );
+}
 
+console.log(mySentence.replace("here", "tayyaba"));
+
+console.log(mySentence.charAt(5));
+console.log(mySentence.slice(0, 9));
+document.write("<br>");
+// alert(Math.floor(Math.random() * 2));
+var user = Number(prompt("enter a number your want to create a passward: "))
+var char = "zxcvbnmlkjhgfdsaqwertyuiopZXCVBNMLKJHGFDSAQWERTYUIOP`!@#$%^&*()_+=-0987654321~,.;'[]{}\|?><"
+passward = []
+for (var i = 0 ; i < user.length ; i++ ){
+   var random=Math.floor(Math.random()*char.length)
+}
+ var result = passward.join("")
+document.write(result)

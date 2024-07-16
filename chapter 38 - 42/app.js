@@ -54,30 +54,30 @@
 // and other are for average and percentage. Call those functions
 // from mainFunction and display result in mainFunction.
 
-var sub1 = Number(prompt("Enter marks of mathematics:"));
-var sub2 = Number(prompt("Enter marks of urdu:"));
-var sub3 = Number(prompt("Enter marks of scince:"));
+// var sub1 = Number(prompt("Enter marks of mathematics:"));
+// var sub2 = Number(prompt("Enter marks of urdu:"));
+// var sub3 = Number(prompt("Enter marks of scince:"));
 
-function main(a, b, c) {
-  var sum = a + b + c;
-  return sum;
-}
-var result = main(sub1, sub2, sub3);
-// console.log(result)
+// function main(a, b, c) {
+//   var sum = a + b + c;
+//   return sum;
+// }
+// var result = main(sub1, sub2, sub3);
+// // console.log(result)
 
-//for average
-function average(result) {
-  var aver = result / 3;
-  return aver;
-}
-var a = average(result);
-// console.log(a)
+// //for average
+// function average(result) {
+//   var aver = result / 3;
+//   return aver;
+// }
+// var a = average(result);
+// // console.log(a)
 
-//for percentage
-function percentage (result){
-  var totalMarks= 300
-var per = (result/totalMarks)*100
-return per 
-}
-var percent = percentage(result)
-console.log(percent)
+// //for percentage
+// function percentage (result){
+//   var totalMarks= 300
+// var per = (result/totalMarks)*100
+// return per 
+// }
+// var percent =Math.round( percentage(result))
+// console.log("percentage: "+percent + "%")
