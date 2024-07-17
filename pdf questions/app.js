@@ -222,11 +222,38 @@ console.log(mySentence.charAt(5));
 console.log(mySentence.slice(0, 9));
 document.write("<br>");
 // alert(Math.floor(Math.random() * 2));
-var user = Number(prompt("enter a number your want to create a passward: "))
-var char = "zxcvbnmlkjhgfdsaqwertyuiopZXCVBNMLKJHGFDSAQWERTYUIOP`!@#$%^&*()_+=-0987654321~,.;'[]{}\|?><"
-passward = []
-for (var i = 0 ; i < user.length ; i++ ){
-   var random=Math.floor(Math.random()*char.length)
+// var user = Number(prompt("enter a number your want to create a passward: "))
+// var char = "zxcvbnmlkjhgfdsaqwertyuiopZXCVBNMLKJHGFDSAQWERTYUIOP`!@#$%^&*()_+=-0987654321~,.;'[]{}\|?><"
+// passward = []
+// for (var i = 0 ; i < user; i++ ){
+//    var random=Math.floor(Math.random()*char.length)
+//    passward.push(char[random])
+// }
+//  var result = passward.join("")
+// document.write(result)
+
+// var today = new Date ().getTime()
+// console.log(today/(1000*60*60*24*365))
+
+// function daysUntilEvent (){
+//   var userDate = prompt("enter your date :" )
+//   var user = new Date (userDate)
+//   if (isNaN(user.getTime())){
+//     return "invalid date format"
+//   }
+//   var today = new Date ().getTime()
+//   var deff = user- today
+//   var mul = Math.round(deff/ (1000*60*60*24))
+//   return mul;
+
+// }
+// console.log(daysUntilEvent())
+
+var userConfirm = confirm("do you want to delete this item:");
+if (userConfirm) {
+  console.log("item delete");
+} else {
+  console.log("action cancelled");
 }
- var result = passward.join("")
-document.write(result)
+
+
