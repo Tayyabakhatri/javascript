@@ -77,7 +77,18 @@
 // function percentage (result){
 //   var totalMarks= 300
 // var per = (result/totalMarks)*100
-// return per 
+// return per
 // }
 // var percent =Math.round( percentage(result))
 // console.log("percentage: "+percent + "%")
+
+// 6. Write a function to delete all vowels from a sentence. Assume
+// that the sentence is not more than 25 characters long.
+
+function noVowelStr(str){
+return str.replace(/[aeiouAEIOU]/g, "")
+
+}
+var userInput = prompt("enter string")
+var result = noVowelStr(userInput)
+console.log(result)

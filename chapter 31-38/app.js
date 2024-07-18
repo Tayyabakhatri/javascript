@@ -324,6 +324,17 @@ document.write("<hr>");
 // Outer function : calculateHypotenuse()
 // Inner function: calculateSquare()
 
+// function calculateHypotenuse() {
+//   function calculateSquare(x) {
+//    return x * x;
+//   }
+//   var base = Number(prompt("enter base of the right angle triangle."))
+//   var perpendicular  = Number(prompt("enter perpendicular of the right angle triangle."))
+//   var hypotenuse =Math.sqrt(calculateSquare(base)+calculateSquare(perpendicular)) 
+//   console.log(hypotenuse)
+// }
+// calculateHypotenuse()
+
 // 9. Write a function that calculates the area of a rectangle.
 //  A = width * height
 //  Pass width and height in following manner:
@@ -411,20 +422,26 @@ document.write("<hr>");
 // occurrences of the specified letter within the string.
 // Sample arguments : 'JSResourceS.com', 'o'
 
-function checkingLetter(str, letter) {
-  var str = prompt("enter one sentence:");
-  var letter = prompt("enter one letter you want to find in string :");
+// function checkingLetter(str, letter) {
+//   var str = prompt("enter one sentence:");
+//   var letter = prompt("enter one letter you want to find in string :");
 
-  for (var i = 0; i < str.length; i++) {
-    if (str[i] === letter) {
-      console.log("The letter " + letter +" in the sentence : " + str + " is occured " +i + "times");
-      break;
-    }
-  }
-}
-checkingLetter()
-
-
+//   for (var i = 0; i < str.length; i++) {
+//     if (str[i] === letter) {
+//       console.log(
+//         "The letter " +
+//           letter +
+//           " in the sentence : " +
+//           str +
+//           " is occured " +
+//           i +
+//           "times"
+//       );
+//       break;
+//     }
+//   }
+// }
+// checkingLetter();
 
 // 14. The Geometrizer
 // Create 2 functions that calculate properties of a circle, using
@@ -439,3 +456,16 @@ checkingLetter()
 // is NN".
 // Circumference of circle = 2πr
 // Area of circle = πr2
+
+var num= Number(prompt("enter radius"))
+function calcCircumference ( x ){
+return 2*3.14*x
+}
+var result = calcCircumference (num)
+console.log("The circumferences is "+result)
+
+function calcArea(a){
+return 3.14*Math.sqrt(num)
+}
+var area = calcArea(num)
+console.log("The area is "+area)
