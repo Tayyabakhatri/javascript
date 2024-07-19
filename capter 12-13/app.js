@@ -27,18 +27,15 @@
 //         alert("It's a lowercase letter.");
 //     } else if (asciiCode >= 48 && asciiCode <= 57) {
 //         alert("It's a number.");
-//     } else if ((asciiCode >= 32 && asciiCode <= 47) || 
-//                (asciiCode >= 58 && asciiCode <= 64) || 
-//                (asciiCode >= 91 && asciiCode <= 96) || 
+//     } else if ((asciiCode >= 32 && asciiCode <= 47) ||
+//                (asciiCode >= 58 && asciiCode <= 64) ||
+//                (asciiCode >= 91 && asciiCode <= 96) ||
 //                (asciiCode >= 123 && asciiCode <= 126)) {
 //         alert("It's a punctuation mark.");
 //     } else {
 //         alert("The character does not fall into any of the specified categories.");
 //     }
 // }
-
-
-
 
 // task2
 // let userInt = +prompt("enter your number");
@@ -61,9 +58,6 @@
 // else{
 //     alert( "one is positive and other is negative");
 // }
-
-
-
 
 // task3
 // var num1 = +prompt("enter you number");
@@ -101,13 +95,12 @@
 //     alert("its a special charactor");
 // }
 // else ("its alphabet");
-// 
-console.log("hello">"Hello");
+//
+console.log("hello" > "Hello");
 // its a true
 // because of unicodes . in unicodes h has a greater value then H
-console.log("apple">"banana");
+console.log("apple" > "banana");
 // its a false
-
 
 // task5
 // const correctPassward = 348906789
@@ -133,8 +126,6 @@ console.log("apple">"banana");
 // }
 // alert(greetting);
 
-
-
 // task7
 // const time = prompt("Enter time : (e.g:19:00)");
 // prompt se pehly + nahi lgana q k input type string hogi ,phir nechy hours and minutes men jo value store krai he us se pehle :parseInt ka yehi akm he k wo string ko number men convert kry
@@ -156,8 +147,7 @@ console.log("apple">"banana");
 //     alert("Good Night");
 // }
 
-
-// practice 
+// practice
 // function assessNumber(a,b,c){
 //     if (a>5||b<10||c===0){
 //         return"condition A";
@@ -173,8 +163,6 @@ console.log("apple">"banana");
 //     }
 
 // }
- 
-
 
 // var userInput = +prompt("enter number")
 // if(userInput== null || ""){
@@ -191,12 +179,12 @@ console.log("apple">"banana");
 //         alert("condition c")
 //     }
 // }
-var myData=["42301345678","Tayyaba","Karachi"]
-var userData =[prompt(typeof "Enter your CNIC","42301"),
-    prompt("Your Name:"),
-    prompt("Your Residence:")
-] 
-console.log(userData)
+// var myData=["42301345678","Tayyaba","Karachi"]
+// var userData =[prompt(typeof "Enter your CNIC","42301"),
+//     prompt("Your Name:"),
+//     prompt("Your Residence:")
+// ]
+// console.log(userData)
 // if (userData==myData){
 //     console.log("you are hired")
 // }
@@ -204,17 +192,28 @@ console.log(userData)
 //     console.log("sorry👦")
 // }
 // console.log(userData[1]);
-// here we are taking input from user ,when user provide data we are asking for the data stored at the index number of 1 
+// here we are taking input from user ,when user provide data we are asking for the data stored at the index number of 1
 // so we can add more prompts in one go .and also can save them in one var
 // console.table(userData)
 
-
-
-
-
-
-
-
-
-
+var userData = [
+  prompt("enter your skill").toLowerCase(),
+  prompt("enter your city :").toLowerCase(),
+  prompt("enter your qualifications:").toLowerCase(),
+];
+if (userData[0] === "javascript") {
+  if (userData[1] === "karachi") {
+    
+    if (userData[2] === "bscs") {
+      
+      alert("your are eligible")
+      }else{
+        alert("bscs kr lo")
+      }
+    }else{
+        alert("come to karachi")
+    }
+  }else{
+    alert("javascript seekh lo")
+  }
 

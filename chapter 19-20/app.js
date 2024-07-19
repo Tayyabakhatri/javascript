@@ -176,14 +176,68 @@ for (var i = 11; i >= 1; i--) {
 // dots patterns
 
 for (var i = 1; i <= 10; i++) {
-    for (var j = 1; j <= 10; j++) {
-        if (i === 1 || i === 10 || j === 1 || j === 10) {
-            document.write("*");
-        } else {
-            document.write("&nbsp");
-        }
+  for (var j = 1; j <= 10; j++) {
+    if (i === 1 || i === 10 || j === 1 || j === 10) {
+      document.write("*");
+    } else {
+      document.write("&nbsp");
     }
-    document.write("<br>");
+  }
+  document.write("<br>");
 }
-   
-    
+
+//     var userInput = Number(prompt("enter number :"))
+//     var times = Number(prompt("how much times :"))
+// for( var i =1 ; i <=times ; i++){
+//   console.log(userInput+"X"+i+"="+ userInput*i)
+// }
+
+// var user = prompt("enter your name:")
+// for(var i = 0 ; i < user.length; i++){
+//   if(user[i]==="a"){
+
+//     continue
+//   }
+//   console.log(user[i])
+// }
+
+//greater num in the array
+
+// var ary = [10,20,30,40,200,50,60,70,80,90,100]
+// var check = 0;
+// for (var i = 0 ; i < ary.length ; i++){
+//   if(ary[i]> check)
+//     check=ary[i]
+// }
+// console.log(check)
+
+//usercityfound
+var cities = ["karachi", "lahore", "quetta", "islamabad", "swat"];
+var user = prompt("enter your city").toLowerCase();
+// var flag = false;
+// for (var i = 0; i < cities.length; i++) {
+//   if (cities[i] == user) {
+//     flag = true;
+//     alert("your city found");
+//     break;
+//   }
+// }
+// if(cities[i]!=user){
+//   alert("not found")
+// }
+
+
+// we can do this in function also
+function usercity(x){
+  for (var i = 0; i < cities.length; i++) {
+    if (cities[i] == x) {
+      flag = true;
+      console.log("your city found");
+      break;
+    }
+  }
+  if(cities[i]!=x){
+    alert("not found")
+  }
+}
+usercity(user)
