@@ -85,10 +85,75 @@
 // 6. Write a function to delete all vowels from a sentence. Assume
 // that the sentence is not more than 25 characters long.
 
-function noVowelStr(str){
-return str.replace(/[aeiouAEIOU]/g, "")
+// function noVowelStr(str) {
+//   return str.replace(/[aeiouAEIOU]/g, "");
+// }
+// var userInput = prompt("enter string");
+// var result = noVowelStr(userInput);
+// console.log(result);
 
-}
-var userInput = prompt("enter string")
-var result = noVowelStr(userInput)
-console.log(result)
+// 7. Write a function with switch statement to count the number of
+// occurrences of any two vowels in succession in a line of text.
+// For example, in the sentence
+// “Pleases read this application and give me gratuity”
+// Such occurrences are ea, ea, ui.
+
+function countSuccessiveVowels(sentence) {
+    // Define the vowels
+    var vowels = ["a", "e", "i", "o", "u"];
+    
+    // Initialize a counter for occurrences
+    var count = 0;
+    
+    // Convert sentence to lowercase to make the check case-insensitive
+    sentence = sentence.toLowerCase();
+    
+    // Iterate through the sentence
+    for (var i = 0; i < sentence.length ; i++) {
+      var char1 = sentence[i];
+      var char2 = sentence[i + 1];
+      
+      // Check if both characters are vowels using a switch statement
+      switch (true) {
+        case (vowels.includes(char1) && vowels.includes(char2)):
+          count++;
+          break;
+      }
+    }
+    
+    // Return the count of occurrences
+return count;
+  }
+  
+  // Example usage
+  var user = prompt("Pleases read this application and give me gratuity")
+  var result = countSuccessiveVowels(user);
+  console.log("Occurrences of two successive vowels:"+ result);
+  
+
+
+
+// Prompt the user for input
+// var user = prompt(
+//   "Enter any sentence and I will count the occurrences of any two vowels in succession in a line of text"
+// );
+
+// // Define the vowels
+// var vowels = ["a", "e", "i", "o", "u"];
+
+// // Initialize a counter for the occurrences of two successive vowels
+// var count = 0;
+
+// // Loop through the user input to check for successive vowels
+// for (var i = 0; i < user.length - 1; i++) {
+//   var char1 = user[i].toLowerCase();
+//   var char2 = user[i + 1].toLowerCase();
+
+//   // Check if both characters are vowels
+//   if (vowels.includes(char1) && vowels.includes(char2)) {
+//     count++;
+//   }
+// }
+
+// // Output the result
+// console.log("Occurrences of two successive vowels:", count);
