@@ -98,37 +98,37 @@
 // “Pleases read this application and give me gratuity”
 // Such occurrences are ea, ea, ui.
 
-function countSuccessiveVowels(sentence) {
-    // Define the vowels
-    var vowels = ["a", "e", "i", "o", "u"];
+// function countSuccessiveVowels(sentence) {
+//     // Define the vowels
+//     var vowels = ["a", "e", "i", "o", "u"];
     
-    // Initialize a counter for occurrences
-    var count = 0;
+//     // Initialize a counter for occurrences
+//     var count = 0;
     
-    // Convert sentence to lowercase to make the check case-insensitive
-    sentence = sentence.toLowerCase();
+//     // Convert sentence to lowercase to make the check case-insensitive
+//     sentence = sentence.toLowerCase();
     
-    // Iterate through the sentence
-    for (var i = 0; i < sentence.length ; i++) {
-      var char1 = sentence[i];
-      var char2 = sentence[i + 1];
+//     // Iterate through the sentence
+//     for (var i = 0; i < sentence.length ; i++) {
+//       var char1 = sentence[i];
+//       var char2 = sentence[i + 1];
       
-      // Check if both characters are vowels using a switch statement
-      switch (true) {
-        case (vowels.includes(char1) && vowels.includes(char2)):
-          count++;
-          break;
-      }
-    }
+//       // Check if both characters are vowels using a switch statement
+//       switch (true) {
+//         case (vowels.includes(char1) && vowels.includes(char2)):
+//           count++;
+//           break;
+//       }
+//     }
     
-    // Return the count of occurrences
-return count;
-  }
+//     // Return the count of occurrences
+// return count;
+//   }
   
-  // Example usage
-  var user = prompt("Pleases read this application and give me gratuity")
-  var result = countSuccessiveVowels(user);
-  console.log("Occurrences of two successive vowels:"+ result);
+//   // Example usage
+//   var user = prompt("Pleases read this application and give me gratuity")
+//   var result = countSuccessiveVowels(user);
+//   console.log("Occurrences of two successive vowels:"+ result);
   
 
 
@@ -157,3 +157,30 @@ return count;
 
 // // Output the result
 // console.log("Occurrences of two successive vowels:", count);
+
+// 8. The distance between two cities (in km.) is input through the
+// keyboard. Write four functions to convert and print this
+// distance in meters, feet, inches and centimeters.
+
+
+// 1 km == 1000metre
+// function meter (user){
+// var met = 1000
+// var result = user*met
+// return result
+// }
+// var user = prompt("enter distance in km")
+// var final1 = meter(user)
+// console.log(final1)
+
+// 1km === 3280.84feet
+//1meter === 3.28084feet
+function feet (user2){
+    
+    var feet = 3280.84
+    var result2 = user2*feet
+    return result2
+    }
+    var user2 = prompt("enter distance in km")
+    var final2 = feet(user2)
+    console.log(final2)
