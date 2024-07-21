@@ -101,18 +101,18 @@
 // function countSuccessiveVowels(sentence) {
 //     // Define the vowels
 //     var vowels = ["a", "e", "i", "o", "u"];
-    
+
 //     // Initialize a counter for occurrences
 //     var count = 0;
-    
+
 //     // Convert sentence to lowercase to make the check case-insensitive
 //     sentence = sentence.toLowerCase();
-    
+
 //     // Iterate through the sentence
 //     for (var i = 0; i < sentence.length ; i++) {
 //       var char1 = sentence[i];
 //       var char2 = sentence[i + 1];
-      
+
 //       // Check if both characters are vowels using a switch statement
 //       switch (true) {
 //         case (vowels.includes(char1) && vowels.includes(char2)):
@@ -120,18 +120,15 @@
 //           break;
 //       }
 //     }
-    
+
 //     // Return the count of occurrences
 // return count;
 //   }
-  
+
 //   // Example usage
 //   var user = prompt("Pleases read this application and give me gratuity")
 //   var result = countSuccessiveVowels(user);
 //   console.log("Occurrences of two successive vowels:"+ result);
-  
-
-
 
 // Prompt the user for input
 // var user = prompt(
@@ -162,7 +159,6 @@
 // keyboard. Write four functions to convert and print this
 // distance in meters, feet, inches and centimeters.
 
-
 // 1 km == 1000metre
 // function meter (user){
 // var met = 1000
@@ -174,13 +170,37 @@
 // console.log(final1)
 
 // 1km === 3280.84feet
+//1km==1000m
 //1meter === 3.28084feet
-function feet (user2){
-    
-    var feet = 3280.84
-    var result2 = user2*feet
-    return result2
-    }
-    var user2 = prompt("enter distance in km")
-    var final2 = feet(user2)
-    console.log(final2)
+// function feet(user2) {
+//   var feet = 3280.84;
+//   var result2 = user2 * feet;
+//   return result2;
+// }
+// var user2 = prompt("enter distance in km");
+// console.log(user2 + "kilometer is equal to " + feet(user2) + "feets");
+
+//1km == 1000m
+//1m == 100cm
+//100*1000==100000
+//1km==100000cm
+// var user3 = prompt("enter distance in km")
+// function kmToCm(user3){
+// var cm = 100000
+// var final3 = user3*cm
+// return final3
+// }
+
+// console.log(user3+"kilometer is equal to " + kmToCm(user3)+ "centimeters")
+
+
+//km in to inches
+//1km == 1000m
+//1m == 39.37 inches
+//1000*39.37==39370
+// var user4 = prompt("enter distance in km") 
+// function inches(inc){
+//     var inches = 39370
+// return inc*inches
+// }
+// console.log(user4+" kilometer is equal to " + inches(user4)+ " inches")
