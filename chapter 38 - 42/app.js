@@ -193,14 +193,39 @@
 
 // console.log(user3+"kilometer is equal to " + kmToCm(user3)+ "centimeters")
 
-
 //km in to inches
 //1km == 1000m
 //1m == 39.37 inches
 //1000*39.37==39370
-// var user4 = prompt("enter distance in km") 
+// var user4 = prompt("enter distance in km")
 // function inches(inc){
 //     var inches = 39370
 // return inc*inches
 // }
 // console.log(user4+" kilometer is equal to " + inches(user4)+ " inches")
+
+//9.Write a program to calculate overtime pay of employees.
+// Overtime is paid at the rate of Rs. 12.00 per hour for every hour
+// worked above 40 hours. Assume that employees do not work
+// for fractional part of an hour
+
+function overTime(hours) {
+  var hrLimit = 40;
+  if (hours >= hrLimit) {
+    var extraHours = Math.abs(hrLimit - hours);
+    var payForExtraHr = extraHours * 12;
+
+    console.log(
+      "extra hours:  " +
+        extraHours +
+        "Payment for extra hours worked : " +
+        payForExtraHr
+    );
+  } else if (hours < hrLimit) {
+    var noExtrahr = "haven't done any extra hour: ";
+    console.log(noExtrahr)
+  }
+}
+
+var hrWorked = prompt("how many hours you worked?");
+overTime(hrWorked);
