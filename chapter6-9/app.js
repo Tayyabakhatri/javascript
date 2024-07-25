@@ -3,14 +3,14 @@
 var a = 10;
 var preIncreament = ++a;
 // var againPreIncreament =preIncreament
-document.write("<h1>Task 1 </h1>"+"<br>The value of ++a is :" + preIncreament) ;
-document.write("<br>Now the value of ++a is:" +preIncreament);
-document.write("<br><br>The value of ++a is:" +preIncreament);
-document.write("<br>Now the value of a is :"+ ++preIncreament);
-document.write("<br> <br>The value of --a is :" + --preIncreament);
-document.write("<br>Now the value of a is :" + preIncreament)
-document.write("<br><br> The value of a-- is :"+ preIncreament);
-document.write("<br> The value of a is:"+ --preIncreament);
+// document.write("<h1>Task 1 </h1>"+"<br>The value of ++a is :" + preIncreament) ;
+// document.write("<br>Now the value of ++a is:" +preIncreament);
+// document.write("<br><br>The value of ++a is:" +preIncreament);
+// document.write("<br>Now the value of a is :"+ ++preIncreament);
+// document.write("<br> <br>The value of --a is :" + --preIncreament);
+// document.write("<br>Now the value of a is :" + preIncreament)
+// document.write("<br><br> The value of a-- is :"+ preIncreament);
+// document.write("<br> The value of a is:"+ --preIncreament);
 
 
 // task2
@@ -50,21 +50,21 @@ document.write("<h1>Task 3</h1><br>prompt");
 // document.write("<br>Total" + numOfSub, totalObtainedMarks , grandPercentage);
 
 // task4
-var initialNum = 1 ;
-var operatorSign = "X";
-var equalSign = "=";
-var anyNum = +prompt("type number" ,"5")
-document.write(
-    "<br> <h1>Table of any number</h1>" +anyNum + operatorSign + initialNum++ + equalSign +anyNum*1 +   
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*2+
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*4+
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*5+
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*3+
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*6+
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*7+
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*8+
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*9+
-    "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*10);
+// var initialNum = 1 ;
+// var operatorSign = "X";
+// var equalSign = "=";
+// var anyNum = +prompt("type number" ,"5")
+// document.write(
+//     "<br> <h1>Table of any number</h1>" +anyNum + operatorSign + initialNum++ + equalSign +anyNum*1 +   
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*2+
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*4+
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*5+
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*3+
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*6+
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*7+
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*8+
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*9+
+//     "<br>" +anyNum + operatorSign + initialNum++ + equalSign + anyNum*10);
 
 
 

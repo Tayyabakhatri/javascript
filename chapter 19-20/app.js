@@ -29,38 +29,38 @@
 
 // star patterns
 // Hollow Square Pattern
-for (var i = 0; i < 5; i++) {
-  for (var j = 0; j < 5; j++) {
-    if (i === 0 || i === 5 - 1) {
-      document.write("*");
-    } else if (j === 0 || j === 5 - 1) {
-      document.write("*");
-    } else {
-      document.write("&nbsp;&nbsp;");
-    }
-  }
-  document.write("<br>");
-}
-// Right Triangle Pattern in Javascript
-for (var i = 0; i < 1; i++) {
-  document.write("*");
-  document.write("<br>");
-  for (var j = 0; j < 2; j++) {
-    document.write("*");
-  }
-  document.write("<br>");
-  for (var k = 0; k < 3; k++) {
-    document.write("*");
-  }
-  document.write("<br>");
-}
+// for (var i = 0; i < 5; i++) {
+//   for (var j = 0; j < 5; j++) {
+//     if (i === 0 || i === 5 - 1) {
+//       document.write("*");
+//     } else if (j === 0 || j === 5 - 1) {
+//       document.write("*");
+//     } else {
+//       document.write("&nbsp;&nbsp;");
+//     }
+//   }
+//   document.write("<br>");
+// }
+// // Right Triangle Pattern in Javascript
+// for (var i = 0; i < 1; i++) {
+//   document.write("*");
+//   document.write("<br>");
+//   for (var j = 0; j < 2; j++) {
+//     document.write("*");
+//   }
+//   document.write("<br>");
+//   for (var k = 0; k < 3; k++) {
+//     document.write("*");
+//   }
+//   document.write("<br>");
+// }
 
-for (var i = 1; i <= 5; i++) {
-  for (var j = 1; j <= i; j++) {
-    document.write("?/");
-  }
-  document.write("<br>");
-}
+// for (var i = 1; i <= 5; i++) {
+//   for (var j = 1; j <= i; j++) {
+//     document.write("?/");
+//   }
+//   document.write("<br>");
+// }
 
 // for (var i=5;i>=0;i--){
 //     for(var j=5;j<=i;j--){
@@ -118,30 +118,30 @@ var num = [
 //     alert("your word is not found")
 // }
 
-for (var i = 5; i >= 1; i--) {
-  for (var j = 1; j <= i; j++) {
-    document.write("*");
-  }
-  document.write("<br>");
-}
+// for (var i = 5; i >= 1; i--) {
+//   for (var j = 1; j <= i; j++) {
+//     document.write("*");
+//   }
+//   document.write("<br>");
+// }
 
-for (var i = 10; i >= 1; i--) {
-  for (var j = 1; j <= i; j++) {
-    document.write("%");
-  }
-  document.write("<br>");
-}
-for (var i = 1; i <= 10; i++) {
-  for (var j = 1; j <= i; j++) {
-    document.write("%");
-  }
-  document.write("<br>");
-}
-var n = 5;
-for (var i = 1; i < 6; i++) {
-  document.write(n + "X" + i + "=" + `${n * i}`);
-  document.write("<br>");
-}
+// for (var i = 10; i >= 1; i--) {
+//   for (var j = 1; j <= i; j++) {
+//     document.write("%");
+//   }
+//   document.write("<br>");
+// }
+// for (var i = 1; i <= 10; i++) {
+//   for (var j = 1; j <= i; j++) {
+//     document.write("%");
+//   }
+//   document.write("<br>");
+// }
+// var n = 5;
+// for (var i = 1; i < 6; i++) {
+//   document.write(n + "X" + i + "=" + `${n * i}`);
+//   document.write("<br>");
+// }
 // document.write("time<br>");
 // for (var i = 1; i <= 12; i++) {
 //   for (var j = 1; j < 61; j++) {
@@ -154,37 +154,37 @@ for (var i = 1; i < 6; i++) {
 
 //  pyramid
 
-for (var i = 1; i <= 11; i++) {
-  for (var j = 11; j > i; j--) {
-    document.write(" &nbsp ");
-  }
-  for (var k = 1; k <= 2 * i - 1; k++) {
-    document.write("*");
-  }
-  document.write("<br>");
-}
-for (var i = 11; i >= 1; i--) {
-  for (var j = 1; j < i; j++) {
-    document.write(" &nbsp ");
-  }
-  for (var k = 1; k <= 2 * i - 1; k++) {
-    document.write("*");
-  }
-  document.write("<br>");
-}
+// for (var i = 1; i <= 11; i++) {
+//   for (var j = 11; j > i; j--) {
+//     document.write(" &nbsp ");
+//   }
+//   for (var k = 1; k <= 2 * i - 1; k++) {
+//     document.write("*");
+//   }
+//   document.write("<br>");
+// }
+// for (var i = 11; i >= 1; i--) {
+//   for (var j = 1; j < i; j++) {
+//     document.write(" &nbsp ");
+//   }
+//   for (var k = 1; k <= 2 * i - 1; k++) {
+//     document.write("*");
+//   }
+//   document.write("<br>");
+// }
 
 // dots patterns
 
-for (var i = 1; i <= 10; i++) {
-  for (var j = 1; j <= 10; j++) {
-    if (i === 1 || i === 10 || j === 1 || j === 10) {
-      document.write("*");
-    } else {
-      document.write("&nbsp");
-    }
-  }
-  document.write("<br>");
-}
+// for (var i = 1; i <= 10; i++) {
+//   for (var j = 1; j <= 10; j++) {
+//     if (i === 1 || i === 10 || j === 1 || j === 10) {
+//       document.write("*");
+//     } else {
+//       document.write("&nbsp");
+//     }
+//   }
+//   document.write("<br>");
+// }
 
 //     var userInput = Number(prompt("enter number :"))
 //     var times = Number(prompt("how much times :"))
@@ -228,16 +228,16 @@ var user = prompt("enter your city").toLowerCase();
 
 
 // we can do this in function also
-function usercity(x){
-  for (var i = 0; i < cities.length; i++) {
-    if (cities[i] == x) {
-      flag = true;
-      console.log("your city found");
-      break;
-    }
-  }
-  if(cities[i]!=x){
-    alert("not found")
-  }
-}
-usercity(user)
+// function usercity(x){
+//   for (var i = 0; i < cities.length; i++) {
+//     if (cities[i] == x) {
+//       flag = true;
+//       console.log("your city found");
+//       break;
+//     }
+//   }
+//   if(cities[i]!=x){
+//     alert("not found")
+//   }
+// }
+// usercity(user)

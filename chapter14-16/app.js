@@ -148,29 +148,29 @@ var colorsName = ["blue ", "Green", "Yellow", "Orange", "Purple", "white", "Grey
 // Copy 3 array elements from cities array to selectedCities
 // array
 
-var cities = ["Karachi", "Lahore", "Islamabad", "quetta", "peshawar"];
-// first three elements
-var selectedCities = cities.slice(0, 3);
-console.log(selectedCities);
-// last three elements
-selectedCities = cities.slice(-3);
-console.log(selectedCities);
-// middle cities
-selectedCities = cities.slice(1, 4);
-console.log(selectedCities);
-// specific citeis
-selectedCities = [cities[1], cities[4]];
-console.log(selectedCities)
+// var cities = ["Karachi", "Lahore", "Islamabad", "quetta", "peshawar"];
+// // first three elements
+// var selectedCities = cities.slice(0, 3);
+// console.log(selectedCities);
+// // last three elements
+// selectedCities = cities.slice(-3);
+// console.log(selectedCities);
+// // middle cities
+// selectedCities = cities.slice(1, 4);
+// console.log(selectedCities);
+// // specific citeis
+// selectedCities = [cities[1], cities[4]];
+// console.log(selectedCities)
 
 
 
 
 // 12. Write a program to create a single string from the
 // below mentioned array:
-var arr = ["This", "is", "my", "cat"]
-document.write("<br>" + arr)
-arr.join("");
-console.log("<br>" + arr);
+// var arr = ["This", "is", "my", "cat"]
+// document.write("<br>" + arr)
+// arr.join("");
+// console.log("<br>" + arr);
 
 
 
@@ -191,15 +191,15 @@ console.log("<br>" + arr);
 
 // 14. Create a new array. Store values one by one in such a way
 // that you can access the values in reverse order. (Last InFirst Out)
-var devices = []
-devices.push("Keyboard");
-devices.push("mouse");
-devices.push("printer");
-devices.push("monitor");
-console.log(devices.pop());
-console.log(devices.pop());
-console.log(devices.pop());
-console.log(devices.pop());
+// var devices = []
+// devices.push("Keyboard");
+// devices.push("mouse");
+// devices.push("printer");
+// devices.push("monitor");
+// console.log(devices.pop());
+// console.log(devices.pop());
+// console.log(devices.pop());
+// console.log(devices.pop());
 
 //  here we can use loop method for grtting values without removing values .since we havent learned that so i have used pop 
 

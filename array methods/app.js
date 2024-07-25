@@ -32,12 +32,12 @@ console.log(colorNames)
 // here it will show updated array
 
 // 2D Arrays
-var matrix = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-]
-console.log(matrix[1][2])
-console.log(colorNames[0][2][3][2])
+// var matrix = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ]
+// console.log(matrix[1][2])
+// console.log(colorNames[0][2][3][2])
 
 

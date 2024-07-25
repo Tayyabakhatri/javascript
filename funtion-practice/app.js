@@ -1,14 +1,14 @@
-var today = new Date();
-var hours = today.getHours()%12;
-var minutes = today.getMinutes();
-var ampm ;
-if(hours>=12){
-    ampm= "AM";
-}
-else{
-    ampm = "PM"
-}
-document.write("The current time is:"+hours+":"+minutes+ampm)
+// var today = new Date();
+// var hours = today.getHours()%12;
+// var minutes = today.getMinutes();
+// var ampm ;
+// if(hours>=12){
+//     ampm= "AM";
+// }
+// else{
+//     ampm = "PM"
+// }
+// document.write("The current time is:"+hours+":"+minutes+ampm)
 
 
 // function factorial(){
@@ -29,9 +29,9 @@ document.write("The current time is:"+hours+":"+minutes+ampm)
 // factorial()
 
 
-var x = +prompt("enter num1")
-var y = +prompt("enter num2")
-console.log(Math.hypot(x,y))
+// var x = +prompt("enter num1")
+// var y = +prompt("enter num2")
+// console.log(Math.hypot(x,y))
 
 
 

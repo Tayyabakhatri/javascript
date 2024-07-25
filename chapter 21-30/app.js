@@ -399,13 +399,13 @@ document.write("<hr>");
 // d. 50.2kilograms
 
 
-var userWeight = prompt("enter you weight eg ;50 , 50 kgs, 50.2 kgs,etc");
-var weightValue = parseFloat(userWeight)
-if(userWeight==weightValue){
-  document.write(userWeight +"kgs")
-}
+// var userWeight = prompt("enter you weight eg ;50 , 50 kgs, 50.2 kgs,etc");
+// var weightValue = parseFloat(userWeight)
+// if(userWeight==weightValue){
+//   document.write(userWeight +"kgs")
+// }
 
-document.write("<hr>");
+// document.write("<hr>");
 
 // 8. Write a program that stores a random secret number from
 // 1 to 10 in a variable. Ask the user to input a number

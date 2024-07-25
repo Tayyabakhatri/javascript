@@ -44,35 +44,35 @@
 // e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
 
 // a.
-var count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-document.write("question 6 a<br>")
-for (var i=1; i<=15; i++){
-    document.write(i+"<br>"+"<hr>")
-}
-document.write("question 6 b<br>")
-// b.
-for(var i = 10 ; i>=1; i--){
-    document.write(i+"<br>"+"<hr>")
-}
-document.write("question 6 c<br>")
-for (var i=0; i<=20; i++){
-    if(i%2==0){
-        document.write(i+"<br>"+"<hr>"  )
-    }
-}
-document.write("question 6 d<br>")
-for (var i=0; i<=20; i++){
-    if(i%2!=0){
-        document.write(i+"<br>"+"<hr>"  )
-    }
-}  
+// var count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+// document.write("question 6 a<br>")
+// for (var i=1; i<=15; i++){
+//     document.write(i+"<br>"+"<hr>")
+// }
+// document.write("question 6 b<br>")
+// // b.
+// for(var i = 10 ; i>=1; i--){
+//     document.write(i+"<br>"+"<hr>")
+// }
+// document.write("question 6 c<br>")
+// for (var i=0; i<=20; i++){
+//     if(i%2==0){
+//         document.write(i+"<br>"+"<hr>"  )
+//     }
+// }
+// document.write("question 6 d<br>")
+// for (var i=0; i<=20; i++){
+//     if(i%2!=0){
+//         document.write(i+"<br>"+"<hr>"  )
+//     }
+// }  
 
-document.write("question 6 e<br>")
-for (var i=0; i<=20; i++){
-    if(i%2==0){
-        document.write(i+"k"+"<br>"+"<hr>"  )
-    }
-}
+// document.write("question 6 e<br>")
+// for (var i=0; i<=20; i++){
+//     if(i%2==0){
+//         document.write(i+"k"+"<br>"+"<hr>"  )
+//     }
+// }
 
 
 // 7. You have an array
@@ -81,25 +81,25 @@ for (var i=0; i<=20; i++){
 // array.
 // After searching, prompt the user whether the given item is
 // found in the list or not.
-var A = ["cake", "apple pie", "cookie", "chips", "patties"];
-var userInput = prompt("Welcome to our ABC bakery.What do you want to order maam/sir?")
-if(A.includes(userInput)){
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var userInput = prompt("Welcome to our ABC bakery.What do you want to order maam/sir?")
+// if(A.includes(userInput)){
 
-    alert(userInput+" is available at index "+`${A.indexOf(userInput)}`+" in our bakery")
-}
-else if (!A.includes(userInput)){
-    alert(userInput+" is not available "+"in our bakery")
-}
+//     alert(userInput+" is available at index "+`${A.indexOf(userInput)}`+" in our bakery")
+// }
+// else if (!A.includes(userInput)){
+//     alert(userInput+" is not available "+"in our bakery")
+// }
 
 // 8. Write a program to identify the largest number in the
 // given array.
-var num = [24, 53, 78, 91, 12];
-var largestNum = num[0];
-for(var i=0; i<num.length;i++){
-    if(num[i]>largestNum){
-        console.log(largestNum =num[i])
-    }
-}
+// var num = [24, 53, 78, 91, 12];
+// var largestNum = num[0];
+// for(var i=0; i<num.length;i++){
+//     if(num[i]>largestNum){
+//         console.log(largestNum =num[i])
+//     }
+// }
 
    
 
@@ -109,13 +109,13 @@ for(var i=0; i<num.length;i++){
 
 // 9. Write a program to identify the smallest number in the
 // given array.
-var numArr= [24, 53, 78, 91, 12]
-var smallestNum = numArr[0]
-for(var i=0; i<numArr.length; i++){
-    if(numArr[i]<smallestNum){
-        console.log(smallestNum=numArr[i])
-    }
-}
+// var numArr= [24, 53, 78, 91, 12]
+// var smallestNum = numArr[0]
+// for(var i=0; i<numArr.length; i++){
+//     if(numArr[i]<smallestNum){
+//         console.log(smallestNum=numArr[i])
+//     }
+// }
 
 // 10. Write a program to print multiples of 5 ranging 1 to
 // 100

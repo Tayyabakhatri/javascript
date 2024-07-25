@@ -457,15 +457,15 @@ document.write("<hr>");
 // Circumference of circle = 2πr
 // Area of circle = πr2
 
-var num= Number(prompt("enter radius"))
-function calcCircumference ( x ){
-return 2*3.14*x
-}
-var result = calcCircumference (num)
-console.log("The circumferences is "+result)
+// var num= Number(prompt("enter radius"))
+// function calcCircumference ( x ){
+// return 2*3.14*x
+// }
+// var result = calcCircumference (num)
+// console.log("The circumferences is "+result)
 
-function calcArea(a){
-return 3.14*Math.sqrt(num)
-}
-var area = calcArea(num)
-console.log("The area is "+area)
+// function calcArea(a){
+// return 3.14*Math.sqrt(num)
+// }
+// var area = calcArea(num)
+// console.log("The area is "+area)

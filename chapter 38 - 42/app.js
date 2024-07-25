@@ -209,23 +209,23 @@
 // worked above 40 hours. Assume that employees do not work
 // for fractional part of an hour
 
-function overTime(hours) {
-  var hrLimit = 40;
-  if (hours >= hrLimit) {
-    var extraHours = Math.abs(hrLimit - hours);
-    var payForExtraHr = extraHours * 12;
+// function overTime(hours) {
+//   var hrLimit = 40;
+//   if (hours >= hrLimit) {
+//     var extraHours = Math.abs(hrLimit - hours);
+//     var payForExtraHr = extraHours * 12;
 
-    console.log(
-      "extra hours:  " +
-        extraHours +
-        "Payment for extra hours worked : " +
-        payForExtraHr
-    );
-  } else if (hours < hrLimit) {
-    var noExtrahr = "haven't done any extra hour: ";
-    console.log(noExtrahr)
-  }
-}
+//     console.log(
+//       "extra hours:  " +
+//         extraHours +
+//         "Payment for extra hours worked : " +
+//         payForExtraHr
+//     );
+//   } else if (hours < hrLimit) {
+//     var noExtrahr = "haven't done any extra hour: ";
+//     console.log(noExtrahr)
+//   }
+// }
 
-var hrWorked = prompt("how many hours you worked?");
-overTime(hrWorked);
+// var hrWorked = prompt("how many hours you worked?");
+// overTime(hrWorked);

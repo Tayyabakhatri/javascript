@@ -309,18 +309,18 @@ var name1 = "Tayyaba";
 // }
 // console.log(position)
 
-var splitted = name1.split("")
-console.log(splitted)
-for( var i = 0 ; i <splitted.length; i++){
-  if (splitted[i]=="a"){
-    console.log(i)
-  }
-}
+// var splitted = name1.split("")
+// console.log(splitted)
+// for( var i = 0 ; i <splitted.length; i++){
+//   if (splitted[i]=="a"){
+//     console.log(i)
+//   }
+// }
 
 
 
 
 
-var fruits = ["mango" , "banana" , "peach" , "papaya"];
+// var fruits = ["mango" , "banana" , "peach" , "papaya"];
 // var index= (fruits.indexOf("papaya"))
 // console.log(index)

@@ -196,24 +196,24 @@ console.log("apple" > "banana");
 // so we can add more prompts in one go .and also can save them in one var
 // console.table(userData)
 
-var userData = [
-  prompt("enter your skill").toLowerCase(),
-  prompt("enter your city :").toLowerCase(),
-  prompt("enter your qualifications:").toLowerCase(),
-];
-if (userData[0] === "javascript") {
-  if (userData[1] === "karachi") {
+// var userData = [
+//   prompt("enter your skill").toLowerCase(),
+//   prompt("enter your city :").toLowerCase(),
+//   prompt("enter your qualifications:").toLowerCase(),
+// ];
+// if (userData[0] === "javascript") {
+//   if (userData[1] === "karachi") {
     
-    if (userData[2] === "bscs") {
+//     if (userData[2] === "bscs") {
       
-      alert("your are eligible")
-      }else{
-        alert("bscs kr lo")
-      }
-    }else{
-        alert("come to karachi")
-    }
-  }else{
-    alert("javascript seekh lo")
-  }
+//       alert("your are eligible")
+//       }else{
+//         alert("bscs kr lo")
+//       }
+//     }else{
+//         alert("come to karachi")
+//     }
+//   }else{
+//     alert("javascript seekh lo")
+//   }
 
