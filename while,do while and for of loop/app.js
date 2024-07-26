@@ -85,10 +85,8 @@
 //jab 5th time loop chaly ga to condition galat hogi to while loop ki body execute nahi hogi ,i++
 //  ho jaiga 6th  time condition sahi hogi to loop phir se chaly ga
 
-
-
 //write a while loop in js that prints the number from 10 to 20 but skip the even num
-//  var i = 20 
+//  var i = 20
 //  while(i<=40){
 //   if(i%2!==0){
 //     console.log(i)
@@ -103,13 +101,113 @@
 //   }
 //  }
 
- var i = 0
- sum=0 
- while(i<50){
-  if(i%3===0||i%5===0){
-   sum+=i
-  }
-  i++
-  
- }
- console.log(sum)
+// var i = 0;
+// sum = 0;
+// while (i < 50) {
+//   if (i % 3 === 0 || i % 5 === 0) {
+//     sum += i;
+//   }
+//   i++;
+// }
+// console.log(sum);
+
+
+//the code will print the num decreasing by 2 and skip the multiple of 5
+// for loop se bhi kia he ur while loop se bhi ,dono ko function se call kia he decrasing by 2 condition se ur skip multiple of5 if se 
+// function decreamentby2() {
+//   for (var i = 50; i > 1; i = i - 2) {
+//     console.log(i);
+//   }
+// }
+// var result = decreamentby2();
+
+// console.log(result);
+
+
+// var i =50 
+// function skip (){
+//     while(i >= 1 ){
+//         if(i%5!==0){
+//             console.log(i)
+//         }
+//         i = i - 2
+//     }
+// }
+//  skip()
+// var sum=0;
+// var i = 1
+// while (i <=  100){
+//     if (i%2===0){
+//         sum+=i 
+//     }
+//     i++
+// }
+// console.log(sum)
+
+// var userInput = Number(prompt("enter your age ,i will tell you how old you will be after 5 years!"))
+// var age = userInput+5
+// alert("your age after 5 years "+ age)
+//doing this with while loop tell user their age after 10 years
+// var name = prompt("enter your name: ")
+// var age = parseInt(prompt("enter your age: "))
+// var futureAge = age
+// var i=0
+// while(i<10){
+//     futureAge++
+//     i++
+// }
+// alert("your age after 5 years will be : "+futureAge)
+
+//1 write a while loop that prints the number from 1 to 10 
+// var i = 1 
+// while(i<=10){
+//     console.log(i)
+//     i++
+// }
+
+//2 create a while loop that ask the user for input until they type "stop"
+// var str = "stop"
+// while(user!==str){
+//     var user =prompt("type some thing")
+// }
+
+//3 create a while loop thay prints the even number from 1 to 20
+// var i = 0 
+// while(i <= 20){
+//     if(i%2===0){
+//         console.log(i)
+//     }
+//     i++
+// }
+
+//4 write a while loop that calculate the factorial of a given number 
+// function factorial(n){
+//     var result= 1
+//     var i =1 
+//     while(i<= n){
+//         result*=i
+//         i++
+//     }
+//     return result;
+// }
+// var user =Number(prompt("enter number:"))
+// var final= factorial(user)
+// console.log(final)
+
+//with for loop 
+// function factorial1(a){
+// var result =1
+// var i =1
+// for (var i = 1 ; i <= a; i++){
+//     result *=i
+// }
+// return result
+// }
+// var b =Number(prompt("enter number:"))
+// var final1= factorial1(b)
+// console.log(final1)
+
+//write a while loop that stimulate a coin toss until the user gets head .
+
+var ran =Math.floor( Math.random()*2)
+console.log(ran)
