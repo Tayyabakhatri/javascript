@@ -99,3 +99,33 @@
 //         }
 
 //     }
+
+//1 write a function that takes a name as an argument and returns a personalized greeting message
+// var user = prompt("enter your name:")
+// function greet (a){
+// alert("hello  " + user)
+// }
+// greet(user)
+
+
+//2 create afuntion that calculate the area of a rectangle given its width and height 
+// function area (a,b){
+//     return a*b
+// }
+// alert("the area of rectangle is :" + area(23,2))
+
+//3 write a function that converts celsius to fahrenheit
+
+function celsiusToFahrenheit(celsius) {
+    return celsius * 9/5 + 32;
+}
+
+// Example usage:
+let celsiusTemperature = 25;
+let fahrenheitTemperature = celsiusToFahrenheit(celsiusTemperature);
+console.log(`${celsiusTemperature}°C is equal to ${fahrenheitTemperature}°F`);
+
+
+//4 write a function that reverse a given string 
+
+
