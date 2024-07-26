@@ -207,7 +207,18 @@
 // var final1= factorial1(b)
 // console.log(final1)
 
-//write a while loop that stimulate a coin toss until the user gets head .
-
-var ran =Math.floor( Math.random()*2)
-console.log(ran)
+//5 write a while loop that stimulate a coin toss until the user gets head .
+// var i = 1
+// while(i>0){
+//     var ran =Math.floor( Math.random()*2)
+//     var toss;
+//     if(ran===0){
+//         toss = "tail"
+//         alert("you got " + toss)
+//     }else{
+//         toss="head"
+//        alert("congradulations you got " + toss)
+//        break
+//     }
+//    i++ 
+// }
