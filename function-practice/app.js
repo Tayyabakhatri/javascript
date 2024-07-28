@@ -10,7 +10,6 @@
 // }
 // document.write("The current time is:"+hours+":"+minutes+ampm)
 
-
 // function factorial(){
 //     var userInput = Number(prompt("enter any number for factorial:"));
 //     if(userInput<0){
@@ -28,13 +27,9 @@
 // }
 // factorial()
 
-
 // var x = +prompt("enter num1")
 // var y = +prompt("enter num2")
 // console.log(Math.hypot(x,y))
-
-
-
 
 // Certainly! Here are some logic questions related to functions in JavaScript:
 
@@ -70,10 +65,6 @@
 
 // These questions cover various aspects of functions in JavaScript, from basic syntax and scope to advanced concepts like recursion and higher-order functions. They can be used to test understanding and proficiency in using functions effectively in JavaScript programming.
 
-
-
-
-
 // var daysOfWeek = ["mon", "tues", "wed", "thur", "fri", "sat", "sun"];
 // var check = prompt("enter any name of day", "eg ; mon,tues ...").toLowerCase()
 
@@ -107,8 +98,7 @@
 // }
 // greet(user)
 
-
-//2 create afuntion that calculate the area of a rectangle given its width and height 
+//2 create afuntion that calculate the area of a rectangle given its width and height
 // function area (a,b){
 //     return a*b
 // }
@@ -116,16 +106,110 @@
 
 //3 write a function that converts celsius to fahrenheit
 
-function celsiusToFahrenheit(celsius) {
-    return celsius * 9/5 + 32;
+// function celsiusToFahrenheit(celsius) {
+//     return celsius * 9/5 + 32;
+// }
+
+// // Example usage:
+// let celsiusTemperature = 25;
+// let fahrenheitTemperature = celsiusToFahrenheit(celsiusTemperature);
+// console.log(`${celsiusTemperature}°C is equal to ${fahrenheitTemperature}°F`);
+
+//4 write a function that reverse a given string
+
+// var userInput = prompt("enter your name :")
+// function rev (a){
+//     return a.split("").reverse().join("")
+// }
+// console.log(rev(userInput))
+
+//5 create a function that takes an array of numbers and return the sum of its elements
+
+// var arr = [1,2,3,4,5,6,7,8,9]
+// function arrSum (a){
+//     var sum =0;
+//     var i = 0
+//     while(i<a.length){
+//         sum+=a[i]
+//         console.log(sum)
+//     }
+//     i++
+//    return sum
+// }
+// var result = arrSum(arr)
+// console.log(result)
+
+//6 write a function that uses a while loop to calculate the sum of num from 1 to given number
+// var user = parseInt(prompt("enter the number:"))
+// function add (input){
+//     var i = 1
+//     var sum =0;
+// while(i<input){
+// sum+=i
+// console.log(sum)
+// }
+// i++
+// }
+// console.log(add(user))
+
+//write a js function that remove all vowels fron input
+// var userInput = prompt("enter any sentence:");
+// function removeVowel(a) {
+//   return a.replace(/[aeiouAEIOU]/g, "");
+// }
+
+// console.log(removeVowel(userInput));
+
+// removing duplicate numbers
+// var userNum = prompt("enter your number:");
+// var array = userNum.split("");
+
+// function duplicateNum(user) {
+//   var result = [];
+//   for (var i = 0; i < user.length; i++) {
+//     if (!result.includes(user[i])) {
+//       result.push(user[i]);
+//     }
+//   }
+//   return result;
+// }
+// var final = duplicateNum(array);
+// console.log(final);
+
+// 1.// Write a JavaScript function that returns a passed string with letters in
+// alphabetical order.
+// var user = prompt("enter any sentence")
+// function alphabetical_order (str){
+// return str.split("").sort().join("")
+// }
+// var result = alphabetical_order(user)
+// console.log(result)
+
+//2  Write a JavaScript function that accepts a string as a parameter and counts the
+// number of vowels within the string.
+
+// var user = prompt("enter your srt");
+function numOfVowels(input) {
+  var vowels = "aeiouAEIOU";
+  var count = 0;
+  for (var i = 0; i < input.lenght; i++) {
+    if (vowels.indexOf(input[i]) !== -1) {
+      count += 1;
+    }
+  }
+  return count;
 }
+console.log(numOfVowels("The quick brown fox"));
 
-// Example usage:
-let celsiusTemperature = 25;
-let fahrenheitTemperature = celsiusToFahrenheit(celsiusTemperature);
-console.log(`${celsiusTemperature}°C is equal to ${fahrenheitTemperature}°F`);
+// function vowel_count(str1) {
+//   var vowel_list = "aeiouAEIOU";
+//   var vcount = 0;
 
-
-//4 write a function that reverse a given string 
-
-
+//   for (var x = 0; x < str1.length; x++) {
+//     if (vowel_list.indexOf(str1[x]) !== -1) {
+//       vcount += 1;
+//     }
+//   }
+//   return vcount;
+// }
+// console.log(vowel_count("The quick brown fox"));
