@@ -189,27 +189,70 @@
 // number of vowels within the string.
 
 // var user = prompt("enter your srt");
-function numOfVowels(input) {
-  var vowels = "aeiouAEIOU";
-  var count = 0;
-  for (var i = 0; i < input.lenght; i++) {
-    if (vowels.indexOf(input[i]) !== -1) {
-      count += 1;
-    }
-  }
-  return count;
-}
-console.log(numOfVowels("The quick brown fox"));
-
-// function vowel_count(str1) {
-//   var vowel_list = "aeiouAEIOU";
-//   var vcount = 0;
-
-//   for (var x = 0; x < str1.length; x++) {
-//     if (vowel_list.indexOf(str1[x]) !== -1) {
-//       vcount += 1;
+// function numOfVowels(input) {
+//   var vowels = "aeiouAEIOU";
+//   var count = 0;
+//   for (var i = 0; i < input.length; i++) {
+//     if (vowels.indexOf(input[i]) !== -1) {
+//       count += 1;
 //     }
 //   }
-//   return vcount;
+//   return count;
 // }
-// console.log(vowel_count("The quick brown fox"));
+// console.log(numOfVowels("tayyaba"));
+
+//3.   Write a JavaScript function that accepts a string as a parameter and converts the
+// first letter of each word of the string in upper case.
+// function titleCase(str) {
+//   var spl = str.split(" ");
+//   for (var i = 0; i < spl.length; i++) {
+//    spl[i]=spl[i][0].toUpperCase() + spl[i].slice(1).toLowerCase();
+
+//   }
+//   return spl.join(" ")
+// }
+// console.log(titleCase("my name is tayyaba"))
+
+// Write a JavaScript program to get the current date.
+// Expected Output :
+// mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+// var today = new Date();
+
+// var dd = today.getDate();
+// var mm = today.getMonth() + 1;
+// var yyyy = today.getFullYear();
+// if (dd < 10) {
+//   dd = "0" + dd;
+// }
+
+// if (mm < 10) {
+//   mm = "0" + mm;
+// }
+// today = mm + "-" + dd + "-" + yyyy;
+// document.write(today);
+// today = mm + "/" + dd + "/" + yyyy;
+// document.write(today);
+// today = dd + "-" + mm + "-" + yyyy;
+// document.write(today);
+// today = dd + "/" + mm + "/" + yyyy;
+
+//  Write a JavaScript program to calculate number of days left until next Christmas.
+
+var today = new Date();
+var mili = today.getTime();
+var Christmas = new Date("2024 11 25");
+var chrismili = Christmas.getTime();
+var def = chrismili - mili;
+var con = Math.floor(def / (1000 * 60 * 60 * 24));
+console.log(con);
+
+// JavaScript Basic : Exercise-10 with Solution
+// Write a JavaScript program to calculate multiplication and division of two
+// numbers (input from user).
+// Sample Form:
+function multi (){
+num1 = document.getElementById("firstnum").value
+num2 = document.getElementById("secondnum").value
+document.getElementById("result").innerHTML=num1*num2
+}
