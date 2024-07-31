@@ -8,10 +8,49 @@
   <body>
     <!-- <a href="#" onclick="this.style.textDecoration='none';"onblur= "this.style.backgroundColor='black'" >I am A Link</a>
     <button onmouseover="greet()">submit</button> -->
-    <!-- <a src="#"><img src="images/IMG_20230505_181211.jpg" alt="" width="50%%";height="500px" onclick="src='images/image2.jpg'"></a> -->
+    
 
     <!-- 1. Write a JavaScript program that creates a button and add a click event listener to log a message when it's clicked. -->
     <!-- <button onclick="this.style.width='100%'" ; onblur="greet()">hello</button> -->
+
+    <!-- 1. Show an alert box on click on a link. -->
+    <a href="#" onclick="alert('hello👏')" style="display: block; text-align: center; font-size: xx-large;">I am A Link</a>
+
+    <!-- 2. Display some Mobile images in browser. On click on an
+// image Show the message in alert to user. -->
+    <img
+      src="images/images (1).jfif"
+      alt=""
+      style="border: 20px black"
+      onclick="alert('do tou want to buy this phone?')"
+    />
+    <img
+      src="images/images.jfif"
+      alt=""
+      style="border: 20px black"
+      onclick="alert('do tou want to buy this phone?')"
+    />
+    <img
+      src="images/images (2).jfif"
+      alt=""
+      style="border: 20px black"
+      onclick="alert('do tou want to buy this phone?')"
+    />
+
+    <!-- // 4. Display an image in browser. Change the picture on mouseover and set the -->
+    <!-- // first picture on mouseout. -->
+
+<a src="#"><img src="images/images (1).jfif" alt="" onmouseover="src='images/images (2).jfif'" onmouseout="src='images/images (1).jfif'"></a>
+
+
+<!-- 5. Show a counter in browser. Counter should increase on click on increase
+button and decrease on click on decrease button. And show updated counter
+value in browser. -->
+<br>
+<br>
+<button style="margin: 50px; text-align: center; font-size: xx-large;" id="bt1" onclick="'decreasecounter()'">decrease</button>
+<button style="margin: 50px; text-align: center; font-size: xx-large;" id="bt2">increase</button>
+<p>result is :  <span id="result"></span></p>
 
 
     <script src="assignment.js"></script>
