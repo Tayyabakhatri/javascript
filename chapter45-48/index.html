@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- <a href="#" onclick="this.style.textDecoration='none';"onblur= "this.style.backgroundColor='black'" >I am A Link</a>
     <button onmouseover="greet()">submit</button> -->
-    
 
     <!-- 1. Write a JavaScript program that creates a button and add a click event listener to log a message when it's clicked. -->
     <!-- <button onclick="this.style.width='100%'" ; onblur="greet()">hello</button> -->
 
     <!-- 1. Show an alert box on click on a link. -->
-    <a href="#" onclick="alert('hello👏')" style="display: block; text-align: center; font-size: xx-large;">I am A Link</a>
+    <a
+      href="#"
+      onclick="alert('hello👏')"
+      style="display: block; text-align: center; font-size: xx-large"
+      >I am A Link</a
+    >
 
     <!-- 2. Display some Mobile images in browser. On click on an
 // image Show the message in alert to user. -->
@@ -37,58 +42,83 @@
       onclick="alert('do tou want to buy this phone?')"
     />
 
-
     <!-- 3. Display 10 student records in table and each row should contain a delete
 // button. If you click on a button to delete a record, entire row should be
 // deleted. -->
 
-<table style=" display: flex; justify-content: center;">
-  <tr>
-    <th>Index</th>
-    <th>Name</th>
-    <th>Class</th>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td>john</td>
-    <td>10</td>
-    <td><input type="button" name="" value="delete"></td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>james</td>
-    <td>10</td>
-    <td><input type="button" name="" value="delete"></td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>mark</td>
-    <td>10</td>
-    <td><input type="button" name="" value="delete"></td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>doe</td>
-    <td>10</td>
-    <td><input type="button" name="" value="delete"></td>
-  </tr>
-</table>
+    <table style="display: flex; justify-content: center">
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>john</td>
+        <td>10</td>
+        <td><input type="button" name="" value="delete" /></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>james</td>
+        <td>10</td>
+        <td><input type="button" name="" value="delete" /></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>mark</td>
+        <td>10</td>
+        <td><input type="button" name="" value="delete" /></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>doe</td>
+        <td>10</td>
+        <td><input type="button" name="" value="delete" /></td>
+      </tr>
+    </table>
 
     <!-- // 4. Display an image in browser. Change the picture on mouseover and set the -->
     <!-- // first picture on mouseout. -->
 
-<a src="#"><img src="images/images (1).jfif" alt="" onmouseover="src='images/images (2).jfif'" onmouseout="src='images/images (1).jfif'"></a>
+    <a src="#"
+      ><img
+        src="images/images (1).jfif"
+        alt=""
+        onmouseover="src='images/images (2).jfif'"
+        onmouseout="src='images/images (1).jfif'"
+    /></a>
 
-
-<!-- 5. Show a counter in browser. Counter should increase on click on increase
+    <!-- 5. Show a counter in browser. Counter should increase on click on increase
 button and decrease on click on decrease button. And show updated counter
 value in browser. -->
-<br>
-<br>
-<button style="margin: 50px; text-align: center; font-size: xx-large;" id="bt1" onclick="decreaseCounter('result')">decrease</button>
-<button style="margin: 50px; text-align: center; font-size: xx-large;" id="bt2" onclick="increaseCounter('result')">increase</button>
-<h1>result is :  <span id="result">100</span></h1>
+    <br />
+    <br />
+    <button
+      style="margin: 50px; text-align: center; font-size: xx-large"
+      id="bt1"
+      onclick="decrease ()"
+    >
+      decrease
+    </button>
+    <button
+      style="margin: 50px; text-align: center; font-size: xx-large"
+      id="bt2"
+      onclick="increase()"
+    >
+      increase
+    </button>
+    <h1>result is : <span id="result">0</span></h1>
 
+    <!-- read more  and read less -->
+    <p id ="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse
+      dolore, tempora molestiae hic quisquam fuga delectus repellendus dolor
+      fugit quo laudantium incidunt dolorum quae nesciunt sint, a ea suscipit.
+    </p>
+   <button id="anc" onclick="expendedContractedText()">read more</button>
+
+   <button id="d" onclick="a()">this is a div</button>
 
     <script src="assignment.js"></script>
     <script src="practice.js"></script>
