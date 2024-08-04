@@ -1,0 +1,39 @@
+
+
+#div1{
+    border: 2px solid black;
+    width: 30%;
+    padding: 20px;
+    background: #ebdede;
+    border-radius:20px ;
+   margin-left: 650px;
+    margin-top: 300px;
+    /* width: auto */
+
+}
+/* input{
+    margin: 10px;
+} */
+#name{
+    width: 350px;
+    float: right;
+}
+#email{
+    width: 350px;
+    float: right;
+}
+#address{
+    width: 350px;
+    float:right;
+}
+#religion{
+     width: 350px;
+    float:right;
+}
+#Phone-number{
+     width: 350px;
+    float: right;
+}
+#button{
+    width: 100%
+}

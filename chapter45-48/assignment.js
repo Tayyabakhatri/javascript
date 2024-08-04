@@ -76,3 +76,10 @@ function a(){
   var divi = document.getElementById("d")
   divi.className="div"
 }
+
+
+function table (){
+ var row = document.getElementsById("table-Row")
+ row.remove()
+
+}

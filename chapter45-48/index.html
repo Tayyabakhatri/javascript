@@ -46,35 +46,35 @@
 // button. If you click on a button to delete a record, entire row should be
 // deleted. -->
 
-    <table style="display: flex; justify-content: center">
+    <table style="display: flex; justify-content: center" id="table1">
       <tr>
         <th>Index</th>
         <th>Name</th>
         <th>Class</th>
       </tr>
-      <tr>
+      <tr id="table-Row">
         <td>0</td>
         <td>john</td>
         <td>10</td>
-        <td><input type="button" name="" value="delete" /></td>
+        <td><input type="button" value="delete" onclick="table()" /></td>
       </tr>
       <tr>
         <td>1</td>
         <td>james</td>
         <td>10</td>
-        <td><input type="button" name="" value="delete" /></td>
+        <td><input type="button" value="delete" /></td>
       </tr>
       <tr>
         <td>2</td>
         <td>mark</td>
         <td>10</td>
-        <td><input type="button" name="" value="delete" /></td>
+        <td><input type="button" value="delete" /></td>
       </tr>
       <tr>
         <td>3</td>
         <td>doe</td>
         <td>10</td>
-        <td><input type="button" name="" value="delete" /></td>
+        <td><input type="button" value="delete" /></td>
       </tr>
     </table>
 
@@ -111,14 +111,14 @@ value in browser. -->
     <h1>result is : <span id="result">0</span></h1>
 
     <!-- read more  and read less -->
-    <p id ="para1">
+    <p id="para1">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse
       dolore, tempora molestiae hic quisquam fuga delectus repellendus dolor
       fugit quo laudantium incidunt dolorum quae nesciunt sint, a ea suscipit.
     </p>
-   <button id="anc" onclick="expendedContractedText()">read more</button>
+    <button id="anc" onclick="expendedContractedText()">read more</button>
 
-   <button id="d" onclick="a()">this is a div</button>
+    <button id="d" onclick="a()">this is a div</button>
 
     <script src="assignment.js"></script>
     <script src="practice.js"></script>
