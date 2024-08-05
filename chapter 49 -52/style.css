@@ -15,25 +15,28 @@
     margin: 10px;
 } */
 #name{
-    width: 350px;
+    width: auto;
     float: right;
 }
 #email{
-    width: 350px;
+     width: auto;
     float: right;
 }
 #address{
-    width: 350px;
+     width: auto;
     float:right;
 }
 #religion{
-     width: 350px;
+      width: auto;
     float:right;
 }
 #Phone-number{
-     width: 350px;
+      width: auto;
     float: right;
 }
 #button{
     width: 100%
+}
+#submit{
+    width: 100%;
 }
