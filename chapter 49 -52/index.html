@@ -7,38 +7,99 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="div1" onsubmit="name()">
+    <form id="div1" onsubmit="return name()">
       <div>
-        <label for="name"> Name :</label>
+        <label for="name">Name:</label>
         <input type="text" name="name" id="name" />
       </div>
-
       <br />
       <div>
-        <label for="email">Email : </label>
+        <label for="email">Email:</label>
         <input type="text" name="email" id="email" />
       </div>
       <br />
       <div>
-        <label for="address">Address : </label>
+        <label for="address">Address:</label>
         <input type="text" name="address" id="address" />
       </div>
       <br />
       <div>
-        <label for="Phone-number"> PhoneNumber : </label>
+        <label for="Phone-number">Phone Number:</label>
         <input type="text" name="num" id="Phone-number" />
       </div>
       <br />
       <div>
-        <label for="religion">Religion : </label>
+        <label for="religion">Religion:</label>
         <input type="text" name="religion" id="religion" />
       </div>
       <br />
       <input type="submit" value="Sign up" id="submit" />
-      <!-- <button value="submit" id="button" >Submit</button> -->
     </form>
     <div id="form-data"></div>
+    <script src="path/to/app.js"></script>
+    <!-- <script src="app.js"></script> -->
 
-    <script src="app.js"></script>
+
   </body>
-</html>
+  </html>
+
+
+
+   
+    
+    
+  <!-- <form id="div1" onsubmit="return displayFormData()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" />
+    </div>
+    <br />
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" />
+    </div>
+    <br />
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address" />
+    </div>
+    <br />
+    <div>
+      <label for="Phone-number">Phone Number:</label>
+      <input type="text" name="num" id="Phone-number" />
+    </div>
+    <br />
+    <div>
+      <label for="religion">Religion:</label>
+      <input type="text" name="religion" id="religion" />
+    </div>
+    <br />
+    <input type="submit" value="Sign up" id="submit" />
+  </form>
+  <div id="form-data"></div>
+
+  <script>
+    function displayFormData() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var address = document.getElementById("address").value;
+      var PhoneNumber = document.getElementById("Phone-number").value;
+      var religion = document.getElementById("religion").value;
+      var formData = {
+        name,
+        email,
+        address,
+        PhoneNumber,
+        religion
+      };
+      document.getElementById("form-data").innerHTML = `
+        <p>Form Data</p>
+        <p>Name: ${formData.name}</p>
+        <p>Email: ${formData.email}</p>
+        <p>Address: ${formData.address}</p>
+        <p>Phone number: ${formData.PhoneNumber}</p>
+        <p>Religion: ${formData.religion}</p>
+      `;
+      return false; // Prevent form submission
+    }
+  </script> -->
