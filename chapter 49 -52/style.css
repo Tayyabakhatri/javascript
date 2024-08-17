@@ -40,3 +40,24 @@
 #submit{
     width: 100%;
 }
+
+#para{
+    width: 50%;
+    text-align: center;
+    border: 6px dotted rgb(132, 132, 211);
+    font-size: 20px;
+    color: blueviolet;
+}
+.btn1{
+    color: white;
+    background-color: rgb(211, 151, 151);
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+#paradiv {
+    display: flex;
+    width: 100%;
+    justify-content: center
+;
+}

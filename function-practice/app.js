@@ -261,3 +261,8 @@ function divide (){
 num2 = document.getElementById("secondnum").value
 document.getElementById("result").innerHTML=num1/num2
 }
+
+function image(){
+    var img = document.getElementById("img")
+    img.src="chapter45-48/images/IMG_20230505_181211.jpg"
+}
