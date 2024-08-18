@@ -256,39 +256,68 @@
 //   console.log("action cancelled");
 // }
 
-Swal.fire({
-  title: "Submit your Github username",
-  input: "text",
-  inputAttributes: {
-    autocapitalize: "off"
-  },
-  showCancelButton: true,
-  confirmButtonText: "Look up",
-  showLoaderOnConfirm: true,
-  preConfirm: async (login) => {
-    try {
-      const githubUrl = `
-        https://api.github.com/users/${login}
-      `;
-      const response = await fetch(githubUrl);
-      if (!response.ok) {
-        return Swal.showValidationMessage(`
-          ${JSON.stringify(await response.json())}
-        `);
-      }
-      return response.json();
-    } catch (error) {
-      Swal.showValidationMessage(`
-        Request failed: ${error}
-      `);
+
+
+
+// Swal.fire({
+//   title: "Submit your Github username",
+//   input: "text",
+//   inputAttributes: {
+//     autocapitalize: "off"
+//   },
+//   showCancelButton: true,
+//   confirmButtonText: "Look up",
+//   showLoaderOnConfirm: true,
+//   preConfirm: async (login) => {
+//     try {
+//       const githubUrl = `
+//         https://api.github.com/users/${login}
+//       `;
+//       const response = await fetch(githubUrl);
+//       if (!response.ok) {
+//         return Swal.showValidationMessage(`
+//           ${JSON.stringify(await response.json())}
+//         `);
+//       }
+//       return response.json();
+//     } catch (error) {
+//       Swal.showValidationMessage(`
+//         Request failed: ${error}
+//       `);
+//     }
+//   },
+//   allowOutsideClick: () => !Swal.isLoading()
+// }).then((result) => {
+//   if (result.isConfirmed) {
+//     Swal.fire({
+//       title: `${result.value.login}'s avatar`,
+//       imageUrl: result.value.avatar_url
+//     });
+//   }
+// });
+
+
+var a =-9*3
+console .log(a)
+var b = "value is " +50
+console.log(b)
+
+// Read in two numbers and display the larger.
+
+function input(){
+  var input = Number(document.getElementById("input1").value)
+  var input2 = Number(document.getElementById("input2").value)
+
+  if(isNaN(input)|| isNaN(input2)){
+    document.getElementById("result").innerHTML="enter avalid number"
+  }else{
+
+    if (input>input2)
+     document.getElementById("result").innerHTML=input+" is greater number"
+    else if(input<input2){
+      document.getElementById.innerHTML=input2+ " is greater number "
+    }else{
+      document.getElementById("result").innerHTML="both are same"
     }
-  },
-  allowOutsideClick: () => !Swal.isLoading()
-}).then((result) => {
-  if (result.isConfirmed) {
-    Swal.fire({
-      title: `${result.value.login}'s avatar`,
-      imageUrl: result.value.avatar_url
-    });
   }
-});
+}
