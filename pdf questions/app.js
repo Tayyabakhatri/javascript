@@ -297,27 +297,36 @@
 // });
 
 
-var a =-9*3
-console .log(a)
-var b = "value is " +50
-console.log(b)
+// var a =-9*3
+// console .log(a)
+// var b = "value is " +50
+// console.log(b)
 
 // Read in two numbers and display the larger.
 
-function input(){
-  var input = Number(document.getElementById("input1").value)
-  var input2 = Number(document.getElementById("input2").value)
+// function input(){
+//   var input = Number(document.getElementById("input1").value)
+//   var input2 = Number(document.getElementById("input2").value)
 
-  if(isNaN(input)|| isNaN(input2)){
-    document.getElementById("result").innerHTML="enter avalid number"
-  }else{
+//   if(isNaN(input)|| isNaN(input2)){
+//     document.getElementById("result").innerHTML="enter avalid number"
+//   }else{
 
-    if (input>input2)
-     document.getElementById("result").innerHTML=input+" is greater number"
-    else if(input<input2){
-      document.getElementById.innerHTML=input2+ " is greater number "
-    }else{
-      document.getElementById("result").innerHTML="both are same"
-    }
-  }
+//     if (input>input2)
+//      document.getElementById("result").innerHTML=input+" is greater number"
+//     else if(input<input2){
+//       document.getElementById.innerHTML=input2+ " is greater number "
+//     }else{
+//       document.getElementById("result").innerHTML="both are same"
+//     }
+//   }
+// }
+
+
+function abc(){
+   var a = document.getElementById("div")
+   var b = a.children[1].style.backgroundColor="red"
+   var c= a.children[2].style.color="pink"
+    
 }
+abc()
