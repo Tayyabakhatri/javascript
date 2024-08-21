@@ -1,8 +1,71 @@
-body{
-    background-image: url("images/background.jpg");
+@font-face {
+    font-family: script;
+    src: url("images/fonts/BRUSHSCI.TTF");
 }
 
-.div{
-    
-    
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+
+.listItems {
+    font-size: 30px;
+    font-style: italic;
+    background-color: #f2f2f2;
+    margin-bottom: 9px;
+    border-radius: 8px;
+}
+
+#card {
+    background-color: #d1d6d0;
+    border-radius: 10px;
+    padding: 20px;
+
+
+}
+
+#list-div {
+    background-color: #fefefe;
+
+}
+
+h1 {
+    font-family: "script";
+    font-size: 60px;
+    text-align: center;
+    color: #e79436;
+    text-decoration: underline
+}
+
+.inputfield {
+    height: 25px;
+    width: 60%;
+    border-radius: 8px;
+    border-color: #e79436;
+
+}
+
+#outerdiv {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    width: 20%;
+    background-color: gray;
+    border: none;
+    color: #e79436;
+    font-size: larger;
+    border-radius: 4px;
+}
+#ul{
+    padding: 9px;
+    list-style: inside;
+    border: 2px dashed #e79436;
+}
+#textarea{
+    width:auto;
 }
