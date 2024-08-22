@@ -53,6 +53,7 @@ h1 {
     display: flex;
     justify-content: space-around;
 }
+
 button {
     width: 20%;
     background-color: gray;
@@ -61,11 +62,33 @@ button {
     font-size: larger;
     border-radius: 4px;
 }
-#ul{
+
+#ul {
     padding: 9px;
     list-style: inside;
     border: 2px dashed #e79436;
 }
-#textarea{
-    width:auto;
+
+#textarea {
+    width: 100%;
+}
+
+.deleteBtn {
+    background: "none";
+    border: "none";
+    padding: "0";
+    cursor: pointer;
+    display: inline;
+    float: right;
+    padding-right: 3px;
+}
+
+.editBtn {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card {
+    margin: 20px;
 }
