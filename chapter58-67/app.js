@@ -19,3 +19,7 @@ console.log(g)
 var h = document.children[0].children[1].children[0].children[2].childNodes[1].nodeType
 console.log(h)
 var i = document.children[0].children[1].children[0].children[2].childNodes[1].innerHTML="updated text"
+var j= document.children[0].children[1].children[0].children[2].lastChild
+var k= document.children[0].children[1].children[0].children[2].firstChild
+console.log(j)
+console.log(k)
