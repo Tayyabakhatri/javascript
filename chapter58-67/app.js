@@ -32,3 +32,9 @@ var n= f.parentElement
 var o =f.parentElement.nodeType
 console.log(n)
 console.log(o)
+//practice
+var a = document.getElementById("p").style.margin
+console.log(a)
+var b = document.getElementById("p").className+=" para"
+console.log(b)
+
