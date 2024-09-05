@@ -49,3 +49,11 @@ console.table(arr[1])
 for (var i = 0; i < arr.length; i++) {
     console.log(arr[i])
 }
+function name(name, father, age) {
+    this.firstName = name,
+        this.father = father,
+        this.age =age
+
+}
+var myName=new name("tayyaba","ghulam",20)
+document.getElementById("my").innerHTML="my name is "+myName.father+"."
