@@ -266,3 +266,9 @@ function image(){
     var img = document.getElementById("img")
     img.src="chapter45-48/images/IMG_20230505_181211.jpg"
 }
+
+function a (){
+    b=9;
+}
+a()
+console.log(b)//variables made without declaration key words are always global

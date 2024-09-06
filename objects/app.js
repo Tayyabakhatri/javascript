@@ -52,8 +52,61 @@ for (var i = 0; i < arr.length; i++) {
 function name(name, father, age) {
     this.firstName = name,
         this.father = father,
-        this.age =age
+        this.age = age
 
 }
-var myName=new name("tayyaba","ghulam",20)
-document.getElementById("my").innerHTML="my name is "+myName.father+"."
+var myName = new name("tayyaba", "ghulam", 20)
+document.getElementById("my").innerHTML = "my name is " + myName.father + "."
+
+var myObject = {
+    firstName: "abx",
+    lastName: "mno",
+    a: function () {
+        return this.firstName + this.lastName
+    }
+}
+console.log(myObject.a())
+var person = {
+    "full name": function (city, country) {
+        return this.firstName + this.lastName + "," + city + country
+    }
+}
+var person1 = {
+    firstName: "asd",
+    lastName: "jgh"
+}
+console.log(person["full name"].call(person1, "karachi", "pakistan"))
+console.log(person["full name"].apply(person1, ["karachi", "pakistan"]))
+var person = {
+    "full name": function (city,country) {
+        return this.firstName + this.lastName +city+country
+    }
+}
+var person1 = {
+    firstName: "asd",
+    lastName: "jgh"
+}
+console.log(person["full name"].call(person1,"karachi","pakistan")) // the difference bet apply and call is call accept parameter in str form and apply take parameters as array form
+console.log(person["full name"].apply(person1["karachi","pakistan"]))//arrray fprm
+
+var person0 = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  
+ var member = {
+    firstName:"Hege",
+    lastName: "Nilsen",
+  }
+  var save = person0.fullName.bind(member);
+  console.log(save())//bind method alwys return new bounded function so we save it and then call it 
+  
+  setTimeout(function() {
+    console.log(person0.fullName.bind(member)());  // Call the bound function after 3 seconds
+  }, 3000);
+  
+
+  
