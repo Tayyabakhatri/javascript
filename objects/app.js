@@ -109,4 +109,12 @@ var person0 = {
   }, 3000);
   
 
-  
+  var myFunction ={
+    myName:"tayyaba",
+    myFatherName:"ghulam muhammad",
+    age:25,
+    myfunc:(city,country)=>{
+        return city+country.toUpperCase()
+    }
+  }
+  console.log(myFunction.myfunc("karachi","pakistan"))
