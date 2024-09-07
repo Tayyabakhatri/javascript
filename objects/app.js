@@ -8,6 +8,12 @@ var employee = {
         return `The Name of employee is ${employee["Employee Name"]} and Age is ${employee["Age"]}. he lives in ${employee["Residence"]} and his salary is ${employee["salary"]}`
     }
 }
+//mwthods of objects
+
+var entries=Object.create(employee)//create method create an object 
+var entries=Object.entries(employee)//entries method bring key/value pair of object 
+var entries=Object.values(employee)//value method bring key value of the object
+console.log(entries)
 var objectKeys = Object.keys(employee)
 console.log(objectKeys)
 for (var i = 0; i < objectKeys.length; i++) {
