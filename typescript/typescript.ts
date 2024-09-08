@@ -1,5 +1,2 @@
-console.log("hellow")
-console.log("hellow")
-
-
-console.log("hellow")
+var firstName : string="tayyaba"//explicit type
+console.log(firstName)

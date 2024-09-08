@@ -1,3 +1,2 @@
-console.log("hellow");
-console.log("hellow");
-console.log("hellow");
+var firstName = "tayyaba"; //explicit type
+console.log(firstName);

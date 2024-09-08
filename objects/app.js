@@ -10,9 +10,9 @@ var employee = {
 }
 //mwthods of objects
 
-var entries=Object.create(employee)//create method create an object 
-var entries=Object.entries(employee)//entries method bring key/value pair of object 
-var entries=Object.values(employee)//value method bring key value of the object
+var entries = Object.create(employee)//create method create an object 
+var entries = Object.entries(employee)//entries method bring key/value pair of object 
+var entries = Object.values(employee)//value method bring key value of the object
 console.log(entries)
 var objectKeys = Object.keys(employee)
 console.log(objectKeys)
@@ -84,43 +84,70 @@ var person1 = {
 console.log(person["full name"].call(person1, "karachi", "pakistan"))
 console.log(person["full name"].apply(person1, ["karachi", "pakistan"]))
 var person = {
-    "full name": function (city,country) {
-        return this.firstName + this.lastName +city+country
+    "full name": function (city, country) {
+        return this.firstName + this.lastName + city + country
     }
 }
 var person1 = {
     firstName: "asd",
     lastName: "jgh"
 }
-console.log(person["full name"].call(person1,"karachi","pakistan")) // the difference bet apply and call is call accept parameter in str form and apply take parameters as array form
-console.log(person["full name"].apply(person1["karachi","pakistan"]))//arrray fprm
+console.log(person["full name"].call(person1, "karachi", "pakistan")) // the difference bet apply and call is call accept parameter in str form and apply take parameters as array form
+console.log(person["full name"].apply(person1["karachi", "pakistan"]))//arrray fprm
 
 var person0 = {
-    firstName:"John",
+    firstName: "John",
     lastName: "Doe",
     fullName: function () {
-      return this.firstName + " " + this.lastName;
+        return this.firstName + " " + this.lastName;
     }
-  }
-  
- var member = {
-    firstName:"Hege",
-    lastName: "Nilsen",
-  }
-  var save = person0.fullName.bind(member);
-  console.log(save())//bind method alwys return new bounded function so we save it and then call it 
-  
-  setTimeout(function() {
-    console.log(person0.fullName.bind(member)());  // Call the bound function after 3 seconds
-  }, 3000);
-  
+}
 
-  var myFunction ={
-    myName:"tayyaba",
-    myFatherName:"ghulam muhammad",
-    age:25,
-    myfunc:(city,country)=>{
-        return city+country.toUpperCase()
+var member = {
+    firstName: "Hege",
+    lastName: "Nilsen",
+}
+var save = person0.fullName.bind(member);
+console.log(save())//bind method alwys return new bounded function so we save it and then call it 
+
+setTimeout(function () {
+    console.log(person0.fullName.bind(member)());  // Call the bound function after 3 seconds
+}, 3000);
+
+
+var myFunction = {
+    myName: "tayyaba",
+    myFatherName: "ghulam muhammad",
+    age: 25,
+    myfunc: (city, country) => {
+        return city + country.toUpperCase()
     }
-  }
-  console.log(myFunction.myfunc("karachi","pakistan"))
+}
+console.log(myFunction.myfunc("karachi", "pakistan"))
+
+function employeeInfo(firstName, lastName, age, gender, city, country) {
+    var employeeData = {
+        "Employee Name": firstName,
+        "employee LastName": lastName,
+        "employee Age": age,
+        "employee gender": gender,
+        "empoyee city": city,
+        "employee country": country,
+        "language": "english"//default values
+    }
+    return employeeData
+}
+var employee1= new employeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
+console.log(employee1)
+function employeeInfo(firstName, lastName, age, gender, city, country) {
+
+    this.employeeName = firstName,
+        this.employeeLastName = lastName,
+        this.employeeAge = age,
+        this.employeegender = gender,
+        this.empoyeecity = city,
+        this.employeecountry = country,
+        this.language = "english"//default values
+}
+var employee1 = new employeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
+console.log(employee1=Object.entries(employee1))//this will sort prooerties in proper way as they are but make an array 
