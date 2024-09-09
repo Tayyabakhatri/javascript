@@ -3,10 +3,20 @@ var employee = {
     "Employee Name": "Muhammad",
     "Age": 26,
     "salary": 50000,
-    "Residence": "Lyari ,Karachi",
+    "Residence": ["lyari", "pakistan"],
     "Get Employee Data": function () {
         return `The Name of employee is ${employee["Employee Name"]} and Age is ${employee["Age"]}. he lives in ${employee["Residence"]} and his salary is ${employee["salary"]}`
     }
+}
+//ager object ki keys pr array ho ur us ki valuse bhi print krwani hon to esy kren gy
+var valuse = Object.values(employee)
+for (var i = 0; i < valuse.length; i++) {
+
+    console.log(employee[valuse[i]])
+
+}
+for (var key in employee) {
+    console.log(employee[key])// yahan ager ham console.log(employee.key) likhen gy to undefine aiga q k jab variable se kuch lety hen to []use kerny hoty hen .
 }
 //mwthods of objects
 
@@ -50,18 +60,19 @@ var arr = [
 
     }
 ]
+
 console.table(arr[1])
 //loop on array of object 
 for (var i = 0; i < arr.length; i++) {
     console.log(arr[i])
 }
-function name(name, father, age) {
+function Name(name, father, age) {
     this.firstName = name,
         this.father = father,
         this.age = age
 
 }
-var myName = new name("tayyaba", "ghulam", 20)
+var myName = new Name("tayyaba", "ghulam", 20)
 document.getElementById("my").innerHTML = "my name is " + myName.father + "."
 
 var myObject = {
@@ -137,9 +148,9 @@ function employeeInfo(firstName, lastName, age, gender, city, country) {
     }
     return employeeData
 }
-var employee1= new employeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
+var employee1 = new employeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
 console.log(employee1)
-function employeeInfo(firstName, lastName, age, gender, city, country) {
+function EmployeeInfo(firstName, lastName, age, gender, city, country) {
 
     this.employeeName = firstName,
         this.employeeLastName = lastName,
@@ -149,5 +160,17 @@ function employeeInfo(firstName, lastName, age, gender, city, country) {
         this.employeecountry = country,
         this.language = "english"//default values
 }
-var employee1 = new employeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
-console.log(employee1=Object.entries(employee1))//this will sort prooerties in proper way as they are but make an array 
+var employee1 = new EmployeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
+console.log(employee1 = Object.entries(employee1))//this will sort prooerties in proper way as they are but make an array 
+//
+function Student(name, father, age, city, country, religion) {
+    this.Name = name,
+        this.FatherName = father,
+        this.Cge = age,
+        this.city = city,
+        this.Country = country,
+        this.Religion = religion
+
+} var userData = prompt("enter your name")
+var student1 = new Student(userData)
+console.log(student1)
