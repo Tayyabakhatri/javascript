@@ -9,12 +9,17 @@ var employee = {
     }
 }
 //ager object ki keys pr array ho ur us ki valuse bhi print krwani hon to esy kren gy
-var valuse = Object.values(employee)
-for (var i = 0; i < valuse.length; i++) {
+var obj= Object.values(employee)
+for(var i =0 ; i <obj.length;i++){
+    if(Array.isArray(obj[i])){
+        console.log(obj[i])//is men array aiga 
+        for(var key of obj[i]){//is men arraya ki values print ho kr aigi
+            console.log(key)
+        }
+    }
+}//
 
-    console.log(employee[valuse[i]])
 
-}
 for (var key in employee) {
     console.log(employee[key])// yahan ager ham console.log(employee.key) likhen gy to undefine aiga q k jab variable se kuch lety hen to []use kerny hoty hen .
 }
