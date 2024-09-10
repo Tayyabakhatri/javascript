@@ -9,11 +9,11 @@ var employee = {
     }
 }
 //ager object ki keys pr array ho ur us ki valuse bhi print krwani hon to esy kren gy
-var obj= Object.values(employee)
-for(var i =0 ; i <obj.length;i++){
-    if(Array.isArray(obj[i])){
+var obj = Object.values(employee)
+for (var i = 0; i < obj.length; i++) {
+    if (Array.isArray(obj[i])) {
         console.log(obj[i])//is men array aiga 
-        for(var key of obj[i]){//is men arraya ki values print ho kr aigi
+        for (var key of obj[i]) {//is men arraya ki values print ho kr aigi
             console.log(key)
         }
     }
@@ -168,9 +168,12 @@ function EmployeeInfo(firstName, lastName, age, gender, city, country) {
         this.employeecountry = country,
         this.language = "english"//default values
 }
-
+// EmployeeInfo.prototype.getDetail = function () {
+//     return `Name: ${this.employeeName} ${this.employeeLastName}, Age: ${this.employeeAge}, Gender: ${this.employeeGender}, City: ${this.employeeCity}, Country: ${this.employeeCountry}, Language: ${this.language}`;
+// }
 
 var employee1 = new EmployeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
+// console.log(employee1.getDetail())
 console.log(employee1 = Object.entries(employee1))//this will sort prooerties in proper way as they are but make an array 
 //
 function Student(name, father, age, city, country, religion) {
