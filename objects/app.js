@@ -151,6 +151,9 @@ function employeeInfo(firstName, lastName, age, gender, city, country) {
         "employee country": country,
         "language": "english"//default values
     }
+    // console.log(employeeData.hasOwnProperty("employee Age"))
+    // console.log(employeeData.hasOwnProperty("language"))
+    // console.log("toString" in employeeData) // in operator will reture true for both direct and prototype chain but hasOwnProperty check for only direct Property
     return employeeData
 }
 var employee1 = new employeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
@@ -165,13 +168,15 @@ function EmployeeInfo(firstName, lastName, age, gender, city, country) {
         this.employeecountry = country,
         this.language = "english"//default values
 }
+
+
 var employee1 = new EmployeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
 console.log(employee1 = Object.entries(employee1))//this will sort prooerties in proper way as they are but make an array 
 //
 function Student(name, father, age, city, country, religion) {
     this.Name = name,
         this.FatherName = father,
-        this.Cge = age,
+        this.Age = age,
         this.city = city,
         this.Country = country,
         this.Religion = religion
@@ -179,3 +184,5 @@ function Student(name, father, age, city, country, religion) {
 } var userData = prompt("enter your name")
 var student1 = new Student(userData)
 console.log(student1)
+
+
