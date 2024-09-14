@@ -168,12 +168,12 @@ function EmployeeInfo(firstName, lastName, age, gender, city, country) {
         this.employeecountry = country,
         this.language = "english"//default values
 }
-// EmployeeInfo.prototype.getDetail = function () {
-//     return `Name: ${this.employeeName} ${this.employeeLastName}, Age: ${this.employeeAge}, Gender: ${this.employeeGender}, City: ${this.employeeCity}, Country: ${this.employeeCountry}, Language: ${this.language}`;
-// }
+EmployeeInfo.prototype.getDetail = function () {
+    return `Name: ${this.employeeName} ${this.employeeLastName}, Age: ${this.employeeAge}, Gender: ${this.employeeGender}, City: ${this.employeeCity}, Country: ${this.employeeCountry}, Language: ${this.language}`;
+} //
 
 var employee1 = new EmployeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
-// console.log(employee1.getDetail())
+console.log(employee1)
 console.log(employee1 = Object.entries(employee1))//this will sort prooerties in proper way as they are but make an array 
 //
 function Student(name, father, age, city, country, religion) {
@@ -187,5 +187,6 @@ function Student(name, father, age, city, country, religion) {
 } var userData = prompt("enter your name")
 var student1 = new Student(userData)
 console.log(student1)
+
 
 
