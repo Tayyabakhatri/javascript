@@ -170,7 +170,7 @@ function EmployeeInfo(firstName, lastName, age, gender, city, country) {
 }
 EmployeeInfo.prototype.getDetail = function () {
     return `Name: ${this.employeeName} ${this.employeeLastName}, Age: ${this.employeeAge}, Gender: ${this.employeeGender}, City: ${this.employeeCity}, Country: ${this.employeeCountry}, Language: ${this.language}`;
-} //
+} //ye  Employee funtion k proto type me save hojaiga , is se hoga ye k memory men space kam reserve hogi ur ek cheez ki zaroorat jab bar bar he to isy ek jagah bna kr rkh do 
 
 var employee1 = new EmployeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
 console.log(employee1)
