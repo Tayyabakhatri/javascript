@@ -167,12 +167,12 @@ function EmployeeInfo(firstName, lastName, age, gender, city, country) {
         this.empoyeecity = city,
         this.employeecountry = country,
         this.language = "english"//default values
+    EmployeeInfo.prototype.getDetail = function () {
+        return `Name: ${this.employeeName} ${this.employeeLastName}, Age: ${this.employeeAge}, Gender: ${this.employeeGender}, City: ${this.employeeCity}, Country: ${this.employeeCountry}, Language: ${this.language}`;
+    } //ye  Employee funtion k proto type me save hojaiga , is se hoga ye k memory men space kam reserve hogi ur ek cheez ki zaroorat jab bar bar he to isy ek jagah bna kr rkh do 
 }
-EmployeeInfo.prototype.getDetail = function () {
-    return `Name: ${this.employeeName} ${this.employeeLastName}, Age: ${this.employeeAge}, Gender: ${this.employeeGender}, City: ${this.employeeCity}, Country: ${this.employeeCountry}, Language: ${this.language}`;
-} //ye  Employee funtion k proto type me save hojaiga , is se hoga ye k memory men space kam reserve hogi ur ek cheez ki zaroorat jab bar bar he to isy ek jagah bna kr rkh do 
-
 var employee1 = new EmployeeInfo("Tayyaba", "Khatri", 25, "Female", "karachi", "pakistan")
+console.log(EmployeeInfo.prototype.getDetail())//yaha hm ne reference de diya he 
 console.log(employee1)
 console.log(employee1 = Object.entries(employee1))//this will sort prooerties in proper way as they are but make an array 
 //
@@ -183,10 +183,16 @@ function Student(name, father, age, city, country, religion) {
         this.city = city,
         this.Country = country,
         this.Religion = religion
-
-} var userData = prompt("enter your name")
-var student1 = new Student(userData)
+    Student.prototype.getDetail = function () {
+        return `the name of student is ${this.Name}`
+    }
+}
+var student1 = new Student("tayyaba")
+console.log(Student.prototype.getDetail())
 console.log(student1)
+//object men prototype men save nahi hi rha ,constructor function men ho rha he
+
+
 
 
 

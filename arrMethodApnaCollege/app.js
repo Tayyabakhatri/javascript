@@ -14,3 +14,18 @@ var reduceArr = arr.reduce((pre,cur)=>{
     return pre+cur
 })
 console.log(reduceArr)
+var student={
+    name:"tayyaba",
+    father:"ghulam M"
+
+}
+var arrValue = Object.values(student)
+var arr=arrValue.forEach(val=>{
+    console.log(val)
+})
+//using for in loop
+for (key in arrValue ){
+   if(arrValue .hasOwnProperty(key)){
+    console.log(key + ": " + arrValue [key]);
+   }
+}
