@@ -16,3 +16,13 @@ let { fathet: father } = myObject//can change the key name
 console.log(father)
 let { fun: { age } } = myObject// destructuring of nested object
 console.log(age)
+//Rest parameter
+function abc(a, b, ...arr) {
+    let result=[]
+    arr.forEach((key)=> {
+       result.push( a + b * key)//demas rule
+    })
+    return result
+}
+let fun = abc(2,3,4,5,1,2)
+console.log(fun)
