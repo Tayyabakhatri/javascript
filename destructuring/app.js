@@ -26,3 +26,24 @@ function abc(a, b, ...arr) {
 }
 let fun = abc(2,3,4,5,1,2)
 console.log(fun)
+
+
+//browser things
+//document.referrer
+const referrer = document.referrer;
+
+if (referrer) {
+  console.log("User came from: " + referrer);
+  document.getElementById("referrerInfo").textContent = "You came from: " + referrer;
+} else {
+  console.log("No referrer detected.");
+  document.getElementById("referrerInfo").textContent = "No referrer detected.";
+}
+
+  const referrer1 = document.referrer;
+
+  if (referrer) {
+    localStorage.setItem('referrer', referrer1);
+    console.log('Referrer saved:', referrer1);
+  }
+ 
