@@ -26,7 +26,15 @@ function abc(a, b, ...arr) {
 }
 let fun = abc(2,3,4,5,1,2)
 console.log(fun)
-
+//reduce method
+// adding all the values of array
+function abc(...arr){
+let add = arr.reduce((pre,cur)=>{
+return pre+cur
+})
+console.log(add)
+}
+abc(2,3,4,5,6,7)
 
 //browser things
 //document.referrer
@@ -47,3 +55,21 @@ if (referrer) {
     console.log('Referrer saved:', referrer1);
   }
  
+// closure lexical scoping
+// function myFun (color){
+//   let body = document.getElementById("body")
+//   function fun2(){
+//       body.style.backgroundColor=`${color}`
+//   }
+//   return fun2()
+   
+// }
+// myFun("green")
+function myFun (color){
+ return function abc (){
+    document.body.style.backgroundColor=`${color}`
+  }
+  
+}
+document.getElementById("green").onclick=myFun("green")
+document.getElementById("blue").onclick=myFun("blue")
