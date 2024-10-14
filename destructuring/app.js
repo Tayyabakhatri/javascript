@@ -71,5 +71,5 @@ function myFun (color){
   }
   
 }
-document.getElementById("green").onclick=myFun("green")
-document.getElementById("blue").onclick=myFun("blue")
+document.getElementById("green").onclick=myFun("green");
+document.getElementById("blue").onclick=myFun("blue");
