@@ -48,6 +48,39 @@ let each = array.forEach((val) => {
     console.log(val.Name.toUpperCase())
 })
 let Map = array.map((val) => {
-    
-console.log(val)
+    console.log(val)
 })
+
+// optional chaining
+let abc = new Employee("anum", "rasheed")
+console.log(abc?.Name?.address?.area)
+//destructuring
+let obj = {
+    Name: "Anum",
+    father: "sadiq",
+    age: 30,
+    area: "nazimabad",
+    color: ["orange", "purple", "blue"]
+
+}
+let { Name, color: [, , blue] } = obj
+console.log(Name, blue)
+//callBack functions
+function hello() {
+    // document.body.style.backgroundColor = color
+    console.log("my")
+}
+
+function bye(callBack) {
+    document.write("helo")
+    callBack()
+} 
+bye(hello)
+//spred operator 
+let nums = [ 1,2,3,4,5,6,7,8,9,0]
+let num2 = nums.slice(0)
+let num3 = [].concat(nums)
+let num4 =[...nums,5,5,6,9]
+console.log(num4)
+
+
