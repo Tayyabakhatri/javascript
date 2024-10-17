@@ -93,7 +93,7 @@ console.log(iter.next().done
 )
 console.log("hetttyye")
 console.log(iter.next())
-//iterators in object
+
 
 
 
