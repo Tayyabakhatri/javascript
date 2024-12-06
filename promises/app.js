@@ -64,8 +64,21 @@ pink.addEventListener('click', outerFunc("pink"));
 let user = prompt("type your name");
 function abc(userName) {
     // function de() {
-        document.write(userName)
+    document.write(userName)
     // }
     // return de
 }
 abc(user)
+let x = 10;
+x *= 2
+console.log(x);
+
+let Array=[1,2,3,4,5,6,7,8,9,10]
+let a= Array.slice(0,3)
+console.log(a);
+let b = Array.splice(4,2,"Tayyaba")
+console.log(b);
+console.log(Array);
+
+
+
