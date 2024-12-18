@@ -1,35 +1,43 @@
 
 var arr = [1, 3, 2, 4, 5, 6, 7, 8, 90, 49, 69, 89, 99, 67, 40, 13, 54, 64, 21, 54, 75]
-var newArr = arr.forEach((val) => {
+let newArr = arr.forEach((val) => {
+
+
     console.log(Math.floor(Math.sqrt(val)))
 });
+
+//it will return array
 var filterArr = arr.filter((val) => {
     return val % 3 !== 0
 })
 console.log(filterArr)
+//when we want to create new array
 var mapArr = arr.map((val) => {
     return val / 2
 })
 console.log(mapArr)
 var reduceArr = arr.reduce((pre, cur) => {
-    return pre + cur
+    const a = pre / cur * 2
+    return a
 })
-console.log(reduceArr)
+console.log(a)
 var student = {
     name: "tayyaba",
     father: "ghulam M"
 
 }
 var arrValue = Object.values(student)
+
+
 var arr = arrValue.forEach(val => {
     console.log(val)
 })
 //using for in loop
-// for (key in arrValue) {
-//     if (arrValue.hasOwnProperty(key)) {
-//         console.log(key + ": " + arrValue[key]);
-//     }
-// }
+for (var key in arrValue) {
+    if (arrValue.hasOwnProperty(key)) {
+        console.log(key + ": " + arrValue[key]);
+    }
+}
 function Employee(name, father) {
     this.Name = name,
         this.fatherName = father
@@ -52,9 +60,24 @@ let Map = array.map((val) => {
     console.log(val)
 })
 
-// optional chaining
+// optional chaining  (only on object)
 let abc = new Employee("anum", "rasheed")
 console.log(abc?.Name?.address?.area)
+
+const MyObject = {
+    name: "Tayyaba",
+    father: "Ghulam",
+    age: 34,
+    addres: {
+        first: "chakiwara",
+        second: "lyari"
+    }
+
+}
+console.log(MyObject?.addres?.second);
+
+
+
 //destructuring
 let obj = {
     Name: "Anum",
@@ -64,8 +87,23 @@ let obj = {
     color: ["orange", "purple", "blue"]
 
 }
+//all array methods can be applied
+obj.color.push('syan')
+console.log(obj.color);
 let { Name, color: [, , blue] } = obj
 console.log(Name, blue)
+//let name should be key name but we can change the key name 
+let {Name:Firstname}=obj
+console.log(Firstname);
+
+
+
+//destructuring in array
+const arrr=[1,2,3,4,["Tayyaba","ghulam"]]
+let [val1,,,,[,val2]]=arrr
+console.log(val1,val2);
+
+
 //callBack functions
 function hello() {
     // document.body.style.backgroundColor = color
@@ -77,6 +115,8 @@ function bye(callBack) {
     callBack()
 }
 bye(hello);
+
+
 //spred operator 
 let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 let num2 = nums.slice(0);
