@@ -27,6 +27,8 @@ for (var key in employee) {
 
 var entries = Object.create(employee)//create method create an object 
 var entries = Object.entries(employee)//entries method bring key/value pair of object 
+console.log(entries); //har key value ka array return kr rh he 
+
 var entries = Object.values(employee)//value method bring key value of the object
 console.log(entries)
 var objectKeys = Object.keys(employee)
@@ -78,7 +80,7 @@ function Name(name, father, age) {
 
 }
 var myName = new Name("tayyaba", "ghulam", 20)
-document.getElementById("my").innerHTML = "my name is " + myName.father + "."
+document.getElementById("my").innerHTML = "my father name is " + myName.father + "."
 
 var myObject = {
     firstName: "abx",
@@ -191,6 +193,20 @@ var student1 = new Student("tayyaba")
 console.log(Student.prototype.getDetail())
 console.log(student1)
 //object men prototype men save nahi hi rha ,constructor function men ho rha he
+//jab bhi constructor function bnai gy to us arrguments normal functions ki terha nahi dety new key word use krty hen us se value dete
+function Numbers(a,b,c,d) {
+    num1=a+b,
+    num2=a-b,
+    num3=c*d,
+    num4=c/d,
+    Numbers.prototype.operations=function(){
+        return num1,num2,num3,num4
+    }
+} 
+   
+var con = new Numbers(2,8,90,6)
+
+console.log(Numbers.prototype.operations());
 
 
 
