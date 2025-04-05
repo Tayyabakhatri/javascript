@@ -5,6 +5,7 @@ let newArr = arr.forEach((val) => {
 
     console.log(Math.floor(Math.sqrt(val)))
 });
+console.log(newArr);
 
 //it will return array
 var filterArr = arr.filter((val) => {
@@ -93,15 +94,15 @@ console.log(obj.color);
 let { Name, color: [, , blue] } = obj
 console.log(Name, blue)
 //let name should be key name but we can change the key name 
-let {Name:Firstname}=obj
+let { Name: Firstname } = obj
 console.log(Firstname);
 
 
 
 //destructuring in array
-const arrr=[1,2,3,4,["Tayyaba","ghulam"]]
-let [val1,,,,[,val2]]=arrr
-console.log(val1,val2);
+const arrr = [1, 2, 3, 4, ["Tayyaba", "ghulam"]]
+let [val1, , , , [, val2]] = arrr
+console.log(val1, val2);
 
 
 //callBack functions
@@ -139,9 +140,19 @@ console.log(myFunc)
 console.log(a)
 console.log(name);
 console.log(func);
+// Qs. Create a function using the “function” keyword that takes a String as an argument &
+//  returns the number of vowels in the string
+function vowel(alphabet) {
+    // console.log(alphabet);
 
-
-
+    for (var i = 0; i <= alphabet.length; i++) {
+        if (alphabet[i] == "a" || alphabet[i] == "e" || alphabet[i] == "i" || alphabet[i] == "o" || alphabet[i] == "u") {
+            let alpha = alphabet[i]
+            console.log(alpha)
+        }
+    }
+}
+vowel("Tayyaba")
 
 
 
